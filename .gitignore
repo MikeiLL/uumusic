@@ -1,0 +1,6 @@
+out/*
+*.midi
+*.pdf
+*.log
+*.dep
+*.aux
