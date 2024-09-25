@@ -22,6 +22,11 @@ melody = \relative c' {
     cis b2 b4 | b gis gis cis~ | cis1 | r4 e e e | % questions that lie in your path I want to
     e2 e4 e | fis( e) e e~ | e( b)cis2~ | cis cis4 cis | % harbor you from the anger find a
     cis b2. | b2 gis4 cis~ | cis1 | | % refuge from the wrath
+
+    r1 | a4 a b cis~ | cis b2.~ | b4 r2. | % This is a message
+    r2. b4 | b b b2 | fis1~ | fis2. r4 | % a message of love
+    r4. a a4 | a2 b4 b | cis2 b4.( fis8) | fis1 | % Love that moves from the inside out
+    r4. b b4 | cis b b( fis) | fis2. r4 | r1 | % Love that never grows tired
   }
 }
 
@@ -35,10 +40,10 @@ verse = \lyricmode {
   I want to har -- bor you from the an -- ger
   Find a re -- fuge from the wrath
 
-  This is a message
-  A message of love
-  Love that moves from the inside out
-  Love that never grows tired
+  This is a mes -- sage
+  A mes -- sage of love
+  Love that moves from the in -- side out
+  Love that ne -- ver grows tired
 
   I come to you with strange fire
   Fire
@@ -84,6 +89,15 @@ harmonies = \chordmode {
   e | e | a | a |
   e | e | a | a |
   e | e | a | a |
+  e | e | a | a |
+  e | e | a | a |
+  e | e | a | a |
+  e | e | a | a |
+
+  a:sus | a:sus | a | a |
+  a:sus | a:sus | a | a |
+  a:sus | a:sus | a | a |
+  a:sus | a:sus | a | a |
 }
 
 
