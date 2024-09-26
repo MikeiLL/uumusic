@@ -68,11 +68,11 @@ harmonies = \chordmode {
   e | e | a | a |
   e | e | a | a |
 
-  a:sus | a:sus | a | a |
-  a:sus | a:sus | a | a |
-  a:sus | a:sus | a | a |
-  a:sus | a:sus | a | a |
-  a:sus | a:sus | a | a |
+  d | d | a | a |
+  d | d | a | a |
+  d | d | a | a |
+  d | d | a | a |
+  d | d | a | a |
   e | e | a | a |
   e | e | a | a |
 }
