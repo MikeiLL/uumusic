@@ -9,7 +9,7 @@
 \paper{ print-page-number = ##f bottom-margin = 0.5\in }
 melody = \relative c'' {
   \clef treble
-  \key e \major
+  \key a \major
   \time 4/4
   \set Score.voltaSpannerDuration = #(ly:make-moment 4/4)
   \new Voice = "verse" {
@@ -24,13 +24,13 @@ melody = \relative c'' {
       e2 e4 e | fis( e) e e~ | e( b)cis2~ | cis cis4 cis | % harbor you from the anger find a
       cis b2. | b2 gis4 cis~ | cis1 | r | % refuge from the wrath
 
-      r | a4 a b cis~ | cis b2.~ | b4 r2. | % This is a message
-      r2. b4 | b b b2 | fis1~ | fis2. r4 | % a message of love
-      r4. a a4 | a2 b4 b | cis2 b4.( fis8) | fis1 | % Love that moves from the inside out
-      r4. b b4 | cis b b( fis) | fis2. r4 | r1 | % Love that never grows tired
+      r | d4 d e fis~ | fis e2.~ | e4 r2. | % This is d messdge
+      r2. e4 | e e e2 | b1~ | b2. r4 | % d messdge of love
+      r4 e2 e4 | e2 e4 e | e2 e4.( b8) | b1 | % Love thdt moves from the inside out
+      r4. e e4 | fis e e( b) | b2. r4 | r1 | % Love thdt never grows tired
 
-      r4. a b4~ | b fis fis2~ | fis2 r4 b | cis( b2) b4~ | % I come to you with strange fire
-      b1~ | b~ | b~ | b2. r4 | fis4.( b fis4~ | fis8 b4. fis4 dis | e2) r | r1 | % fire
+      r4. dis e4~ | e b b2~ | b2 r4 e | fis( e2) e4~ | % I come to you with strange fire
+      e1~ | e~ | e~ | e2. r4 | b4.( e b4~ | b8 e4. b4 gis | a2) r | r1 | % fire
     }
   }
 }
