@@ -7,7 +7,7 @@
 }
 
 \paper{ print-page-number = ##f bottom-margin = 0.5\in }
-melody = \relative c' {
+melody = \relative c'' {
   \clef treble
   \key e \major
   \time 4/4
@@ -19,14 +19,17 @@ melody = \relative c' {
     e e2 fis4~ | fis e2 e4~ | e b cis2~ | cis cis4 cis | % incense of my soil is burned by
     cis4( b2) b4~ | b2 gis4 cis~ | cis1~ | cis2 r4 e | % the fire in my blood I
     e2 e4 e | fis2 e4 e~ | e cis2.~ | cis4 r cis cis | % come with a softer answer to the
-    cis b2 b4 | b gis gis cis~ | cis1 | r4 e e e | % questions that lie in your path I want to
+    cis b2 b4 | b b gis cis~ | cis1 | r4 e e e | % questions that lie in your path I want to
     e2 e4 e | fis( e) e e~ | e( b)cis2~ | cis cis4 cis | % harbor you from the anger find a
-    cis b2. | b2 gis4 cis~ | cis1 | | % refuge from the wrath
+    cis b2. | b2 gis4 cis~ | cis1 | r | % refuge from the wrath
 
-    r1 | a4 a b cis~ | cis b2.~ | b4 r2. | % This is a message
+    r | a4 a b cis~ | cis b2.~ | b4 r2. | % This is a message
     r2. b4 | b b b2 | fis1~ | fis2. r4 | % a message of love
     r4. a a4 | a2 b4 b | cis2 b4.( fis8) | fis1 | % Love that moves from the inside out
     r4. b b4 | cis b b( fis) | fis2. r4 | r1 | % Love that never grows tired
+
+    r4. a b4~ | b fis fis2~ | fis2 r4 b | cis( b2) b4~ | % I come to you with strange fire
+    b1~ | b2. r4 | fis4.( b fis4~ | fis8 b4. fis4 dis | e2) r | % fire
   }
 }
 
@@ -98,6 +101,9 @@ harmonies = \chordmode {
   a:sus | a:sus | a | a |
   a:sus | a:sus | a | a |
   a:sus | a:sus | a | a |
+  a:sus | a:sus | a | a |
+
+  e | e | a | a |
 }
 
 
