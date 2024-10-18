@@ -2,8 +2,7 @@
 
 \header {
   title = "Song"
-  composer = "Words and Music by Rivka & Mike iLL"
-  tagline = "Copyright R. and M. Kilmer Creative Commons Attribution-NonCommercial, BMI"
+  composer = "Arranged by Mike iLL Kilmer for UU Pensacola"
 }
 
 \paper{ print-page-number = ##f bottom-margin = 0.5\in }

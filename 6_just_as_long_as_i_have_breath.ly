@@ -2,7 +2,7 @@
 
 \header {
   title = "#6 Just as Long as I Have Breath"
-  composer = "Arranged by Mike iLL for UU Pensacola"
+  composer = "Arranged by Mike iLL Kilmer for UU Pensacola"
 }
 
 \paper{ print-page-number = ##f bottom-margin = 0.5\in }
@@ -12,12 +12,14 @@ melody = \relative c' {
   \time 4/4
   \set Score.voltaSpannerDuration = #(ly:make-moment 4/4)
   \new Voice = "verse" {
-    f4. g8 f4 c | f g a2 |
-    a4 c bes a | g g f2 |
-    f4. g8 f4 c | f g a2 |
-    a4 c bes a | g g f2 |
-    a4 a g c | b d c2 |
-    a4. g8 bes4 a | g g f2 |
+    \repeat volta 3 {
+      f4. g8 f4 c | f g a2 |
+      a4 c bes a | g g f2 |
+      f4. g8 f4 c | f g a2 |
+      a4 c bes a | g g f2 |
+      a4 a g c | b d c2 |
+      a4. g8 bes4 a | g g f2 |
+    }
   }
 }
 
