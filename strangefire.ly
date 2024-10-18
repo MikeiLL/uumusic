@@ -7,7 +7,7 @@
 }
 
 \paper{ print-page-number = ##f bottom-margin = 0.5\in }
-melody = \relative c'' {
+melody = \transpose e fis { \relative c'' {
   \clef treble
   \key a \major
   \time 4/4
@@ -33,7 +33,7 @@ melody = \relative c'' {
       e1~ | e~ | e~ | e2. r4 | b4.( e b4~ | b8 e4. b4 gis | a2) r | r1 | % fire
     }
   }
-}
+}}
 
 verse = \lyricmode {
   I come to you with strange fire
@@ -56,7 +56,7 @@ verse = \lyricmode {
 
 }
 
-harmonies = \chordmode {
+harmonies = \transpose e fis { \chordmode {
   % Intro
   e4 |
   e1 | e | a | a |
@@ -75,7 +75,7 @@ harmonies = \chordmode {
   d | d | a | a |
   e | e | a | a |
   e | e | a | a |
-}
+}}
 
 
 \score {
