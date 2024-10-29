@@ -6,7 +6,7 @@
 }
 
 \paper{ print-page-number = ##f bottom-margin = 0.5\in }
-melody = \relative c' {
+melody =  \transpose c bes { \relative c {
   \clef treble
   \key c \major
   \time 6/8
@@ -19,9 +19,9 @@ melody = \relative c' {
     d8 d4 d d8 | e4 e8 e4 d8 | d( c4) c r8 | r2 e,8 g |
     a4. a4 r8 | r2 a8 g | e4. e4 r8 | r2 e8 g |
     a4. a4 r8 | r2 a8 g | e2( f8 e | d2~ d8 c) |
-    c2 r4 | r2. | r2. | r2. |
+    c2 r4 | r2. | r2. | r2. \bar "|."
   }
-}
+} }
 
 verse = \lyricmode {
   I've heard there was a sec -- ret chord
@@ -36,7 +36,7 @@ verse = \lyricmode {
 
 }
 
-harmonies = \chordmode {
+harmonies = \transpose c bes { \chordmode {
   % Intro
   \partial 8 r8 |
   c2. | a:min | c2. | a:min |
@@ -47,7 +47,7 @@ harmonies = \chordmode {
   f | f | c | c |
   f | f | c | g |
   c2. | a:min | c2. | a:min |
-}
+} }
 
 
 \score {
