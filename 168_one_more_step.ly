@@ -46,7 +46,10 @@ verse = \lyricmode {
 
 harmonies = \chordmode {
   % Intro
-  c1
+  e2. | b | cis:min | cis:min |
+  fis:min | a:maj7 | b | b |
+  e:9/gis | e:7 | a | e:9/gis |
+  e | b | e2 b4 | e2. |
 }
 
 
