@@ -1,7 +1,7 @@
 \version "2.18.2"
 
 \header {
-  title = "Song"
+  title = "#318 We Would Be One"
   composer = "Arranged by Mike iLL Kilmer for UU Pensacola"
 }
 
@@ -17,7 +17,7 @@ melody = \relative c'' {
     g4 bes bes bes | c2. g4 | g bes bes4. f8 | f4 aes2.~ |
     aes4 aes g f | g2. ees4 | ees f f4. g8 | g1~ |
     g4 bes bes bes | c2. g4 | g bes bes4. f8 | f4 aes2.~ |
-    aes4 aes g f | g2. ees4 | ees f f4. ees8 | e1 \bar "|."
+    aes4 aes g f | g2. ees4 | ees f f4. ees8 | ees1 \bar "|."
   }
 }
 
