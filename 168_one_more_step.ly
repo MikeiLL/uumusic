@@ -14,7 +14,7 @@ melody = \relative c'' {
   \new Voice = "verse" {
     gis2. | fis | e | e4 fis gis |
     a2. | gis | fis | fis4 gis a |
-    b2 e,4 | b'2 e,4 | b'2 a4 | b, e a | gis2. | fis | e~ | e |
+    b2 e,4 | b'2 e,4 | b'2 a4 | b, e a | gis2. | fis | e~ | e \bar "|."
   }
 }
 
