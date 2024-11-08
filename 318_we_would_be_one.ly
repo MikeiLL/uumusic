@@ -32,14 +32,12 @@ verse = \lyricmode {
 }
 
 harmonies = \chordmode {
-  % Intro
-  ees1 | bes | bes | bes2 ees2 | % we would be one... singing
-  ees1 | bes2 ees2 | ees2. bes4 | ees1 | % our hymn of love... to pledge our selves a -- new
-  ees | c:min | ees2.:/g bes4 | bes f2.:min | % to that hight cause of great -- er un -- der -- stand -- ing
-  f2:min c4:7 f:min/aes | ees1:/bes | bes2.:/g g4 | g1 | % of who we are... and what in us is true
-  g4 ees2. | c1:min | c2.:min bes4 | bes f2.:min | % we would be one... in living for each other
-  f2:min c4:7 f:min/aes | ees1:/bes | ees2:/bes bes4 ees | % to show to all... a new community
-  ees1 |
+  ees1 | aes | aes | aes4 ees2. | % we would be one... singing
+  ees1 | aes | aes | ees | % our hymn of love... to pledge our selves a -- new
+  ees | c:min | ees:/g | aes | % to that hight cause of great -- er un -- der -- stand -- ing
+  f:min | ees | ees | g:7 | % of who we are... and what in us is true
+  f:min | c:min | c:min | f:min | % we would be one... in living for each other
+  f:min | a:min7.5- | g:7 | aes:7/bes | % to show to all... a new community
 }
 
 \score {
