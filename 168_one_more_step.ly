@@ -6,7 +6,7 @@
 }
 
 \paper{ print-page-number = ##f bottom-margin = 0.5\in }
-melody = \relative c'' {
+melody = \transpose e f \relative c'' {
   \clef treble
   \key e \major
   \time 3/4
@@ -44,7 +44,7 @@ verse = \lyricmode {
   we’ll sing one more song.
 }
 
-harmonies = \chordmode {
+harmonies = \transpose e f \chordmode  {
   % Intro
   e2. | b | cis:min | cis:min |
   fis:min | a:maj7 | b | b |
