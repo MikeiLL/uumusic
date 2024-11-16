@@ -29,7 +29,7 @@ verse = \lyricmode {
 harmonies = \chordmode {
   % Intro
   \partial 4 f4 |
-  b1:min7.5- | b:maj7 | f | f:/e |
+  b1:min7.5- | b:maj7 | f | f:/ees |
   d:min | g:min |
   b1:min7.5- | b:maj7 | f | a2:min bes |
   bes  c | bes4 f2
