@@ -21,10 +21,10 @@ melody = \relative c' {
     d,2.~ d8 ees~ | ees b~ b4 r2 | % Blue Xmas.,
     c8 cis dis e fis g a bes | c4 des8 bes4. b4 |% When you're blue at ...You see right through all
     c8 aes4. a4 bes8 ges~ | ges4 g4 aes8 e4. | % the waste All the sham All the haste
-    r2. r8 ees | f ees4. des4 bes | r1 | % And plain ole bad taste.
+    r2. r8 ees | f ees4. des4 bes | r1 | r | % And plain ole bad taste.
     %
-    % Sidewalk Santa Clauses are
-    % Much, much, much too thin.
+    \tuplet 3/2 { r4 bes bes } \tuplet 5/2 { bes bes bes bes bes } | % Sidewalk Santa Clauses are
+    \tuplet 3/2 { des bes des } ees8 bes4. | % Much, much, much too thin.
     % They're wearing fancy rented costumes,
     % False beards
     % And big fat phony grins.
@@ -74,13 +74,10 @@ verse = \lyricmode {
 
   Blue X -- mas.
   When you're blue at Christ -- mas -- time,
-  You see right through
-  all the waste
-  all the sham
-  all the haste...
+  you see right through all the waste all the sham all the haste...
   and plain ole bad taste.
 
-  Sidewalk Santa Clauses are
+  Side -- walk San -- ta Claus -- es are
   Much, much, much too thin.
   They're wear -- ing fan -- cy rent -- ed cos -- tumes,
   False beards
@@ -127,7 +124,9 @@ harmonies = \chordmode {
   c:min7 | c:min7 | c:min7 | f4.:7 bes:7 bes4:7 |
   c1:min7 | c:min7 | c:min7 | f4.:7 bes:7 ees4:7 |
   ees8:7 aes4.:7 des4. ges8:7 | ges4 b4.:7 e4.:7 |
-  e1:7 | e2.:7 bes4:min |
+  e1:7 | e1:7 |
+  % Verse
+  bes1:min |
 }
 
 
