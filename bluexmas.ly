@@ -2,7 +2,7 @@
 
 \header {
   title = "Blue X-Mas by Miles Davis and Gil Evans"
-  composer = "Arranged by Mike iLL Kilmer for UU Pensacola"
+  composer = "Transcribed by Mike iLL Kilmer"
 }
 
 \paper{ print-page-number = ##f bottom-margin = 0.5\in }
@@ -12,20 +12,16 @@ melody = \relative c' {
   \time 4/4
   \set Score.voltaSpannerDuration = #(ly:make-moment 4/4)
   \new Voice = "verse" {
-    % Merry Christmas.
-    % I hope you have a white one,
-    % But for me it's blue.
+    r4 fis d2\fermata | r4 dis b4.\fermata b8 | % Merry Christmas. I
+    c cis dis e fis g a bes | c4 r8 cis4 r8 a4~ | a1 | r | % hope you have... it's blue.
     %
-    % Blue Christmas.
-    % That's the way you see it when you're feeling blue.
+    d,2.~ d8 ees~ | ees b~ b4 r2 | % Blue Christmas.
+    c8 cis dis e fis g a bes | c4 des8 bes4. r4 | % That's the way you see it when you're feeling blue.
     %
-    % Blue Xmas.,
-    % When you're blue at Christmastime,
-    % You see right through
-    % All the waste
-    % All the sham
-    % All the haste
-    % And plain ole bad taste.
+    d,2.~ d8 ees~ | ees b~ b4 r2 | % Blue Xmas.,
+    c8 cis dis e fis g a bes | c4 des8 bes4. b4 |% When you're blue at ...You see right through all
+    c8 aes4. a4 bes8 ges~ | ges4 g4 aes8 e4. | % the waste All the sham All the haste
+    r2. r8 ees | f ees4. des4 bes | r1 | % And plain ole bad taste.
     %
     % Sidewalk Santa Clauses are
     % Much, much, much too thin.
@@ -69,20 +65,20 @@ melody = \relative c' {
 }
 
 verse = \lyricmode {
-  Merry Christ -- mas.
-  I hope you have a white one,
-  But for me it's blue.
+  Mer -- ry Christ -- mas.
+  I hope you have a white one
+  but for me it's blue.
 
   Blue Christ -- mas.
   That's the way you see it when you're feel -- ing blue.
 
-  Blue Xmas.,
+  Blue X -- mas.
   When you're blue at Christ -- mas -- time,
   You see right through
-  All the waste
-  All the sham
-  All the haste
-  And plain ole bad taste.
+  all the waste
+  all the sham
+  all the haste...
+  and plain ole bad taste.
 
   Sidewalk Santa Clauses are
   Much, much, much too thin.
@@ -126,7 +122,12 @@ verse = \lyricmode {
 
 harmonies = \chordmode {
   % Intro
-  c1
+  bes1:5+/c | ees:5+ |
+  d2 dis | fis:maj7.5- g:maj7.5-/a | d1 | d |
+  c:min7 | c:min7 | c:min7 | f4.:7 bes:7 bes4:7 |
+  c1:min7 | c:min7 | c:min7 | f4.:7 bes:7 ees4:7 |
+  ees8:7 aes4.:7 des4. ges8:7 | ges4 b4.:7 e4.:7 |
+  e1:7 | e2.:7 bes4:min |
 }
 
 
