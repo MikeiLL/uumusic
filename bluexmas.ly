@@ -28,8 +28,8 @@ melody = \relative c' {
     }
     %
     \alternative {
+      {
       \new Voice = "verse" {
-        {
           r2 bes4 bes8 bes~ | bes4 bes bes8 bes4 bes8~ | bes4 ees ees8 des4. | des4. bes4. bes4 | % Had a nightmare; stuck in Wallmart and I could'nt leave.
           r2 bes4 bes8 bes~ | bes4 bes8 bes4 bes8 bes bes | \tuplet 3/2 {bes4. bes4 bes4. bes4 ees4~} | ees4 des bes r | % Isles and isles of blow up Santas, raindeer, snowmen, Chrismas trees.
           \tuplet 3/2 {ees4 ees des ees ees des} | \tuplet 3/2 {ees ees des ees2 des4} | ees4 des8 ees ees4 des | f2 r | % Endless or seemingly endless supplies of slave produced impulse buys.
@@ -39,32 +39,17 @@ melody = \relative c' {
           \tuplet 3/2 {des2 c4 ges'2 f4~} | f b2 r4 | % dime to the needy.
         }
       }
+      {
+      \context Voice = "verse" {
+          \tuplet 3/2 { bes,8 bes bes~ bes bes4 } bes16 bes bes bes bes8 bes  |% Diabetes fertilizers flow like
+          bes8 bes bes bes bes bes bes4 | % fossils out of third world mines
+          bes8 bes bes bes bes bes bes bes | \tuplet 3/2 {bes4 bes bes} bes4 bes | ees4 des b r | % powering compulsive acquisition despite our bothered minds
+          % Black Friday, Cyber Monday, Giving Tuesday, Work-it-off Wednesday, Debt Consolidation
+          % Thursday in the worst way praying
+          % Jesus get me through your God-forsaken birthday
+        }
+      }
     }
-    % Then it makes it's way to thrift stores and estate sales, ultimately
-    % landing in a landfill so excuse Mister Grinch here if it makes me ill.
-    %
-    %
-    % Blue Christmas.
-    % All the paper, tinsel, and the  falderal (fall-de-rawl).
-    % Blue Christmas.
-    % People giving gifts that matter not at all.
-    % Bitter gall—
-    % What I call falderal.
-    %
-    % INSTRUMENTAL SOLO
-    %
-    % Lots of hungry, homeless children
-    % In your own back yards
-    % While you're VEDDY, VEDDY busy
-    % Addressing 20 zillion Christmas cards.
-    %
-    % Yuletide is the season to be seen
-    % And, oh, to give, and ah, to share,
-    % But all you December do-gooders rush around
-    % And rant and rave and loudly blare
-    % Merry Christmas!
-    % I hope you have a white one,
-    % But for me it' blue!
 }
 
 intro = \lyricmode {
@@ -104,8 +89,12 @@ verse = \lyricmode {
   It's a time when the gree -- dy
   give a dime to the nee -- dy.
 
-  Diabetes fertilizers flow like fossils out of third world mines
-  powering compulsive acquisition despite body and mind
+  Di -- a -- be -- tes fer -- ti -- li -- zers flow like fos -- sils out of third world mines
+  pow -- er -- ing com -- pul -- sive ac -- qui -- si -- tion des -- pite our bot -- hered minds
+  Black Fri -- day, Cy -- ber Mon -- day, Giv -- ing Tues -- day, Work- -- it- -- off Wednes -- day, Debt Con -- so -- li -- da -- tion
+  Thurs -- day in the worst way pray -- ing
+  Je -- sus get me through your God- -- for -- sa -- ken birth -- day
+
   % Now it makes it's way to thrift stores and estate sales, ultimately
   % landing in a landfill so excuse Mister Grinch here
   % if it makes me feel a little ill.
@@ -130,10 +119,6 @@ harmonies = \chordmode {
   bes:min | bes:min | bes:min | bes:min |
   f2.:min7.9- bes4:9+ | bes1:9+ | g1:maj7 | fis:maj7 | % needy greedy
   % blue xmas repeats then next verse
-  bes:min | bes:min | bes:min | bes:min |
-  bes:min | bes:min | bes:min | bes:min |
-  des:min | des:min | des:min | des:min |
-  bes:min | bes:min | bes:min | bes:min |
 }
 
 
