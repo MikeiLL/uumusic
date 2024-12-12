@@ -41,12 +41,16 @@ melody = \relative c' {
       }
       {
       \context Voice = "verse" {
-          \tuplet 3/2 { bes,8 bes bes~ bes bes4 } bes16 bes bes bes bes8 bes  |% Diabetes fertilizers flow like
-          bes8 bes bes bes bes bes bes4 | % fossils out of third world mines
-          bes8 bes bes bes bes bes bes bes | \tuplet 3/2 {bes4 bes bes} bes4 bes | ees4 des b r | % powering compulsive acquisition despite our bothered minds
-          % Black Friday, Cyber Monday, Giving Tuesday, Work-it-off Wednesday, Debt Consolidation
-          % Thursday in the worst way praying
-          % Jesus get me through your God-forsaken birthday
+          r2 bes,8 bes bes bes | bes8 bes bes bes bes4 bes | % Diabetes fertilizers flow like
+          bes8 bes4. bes8 bes4. | bes4 bes bes r | % fossils out of third world mines
+          bes8 bes4 bes4 bes4 bes8~ | bes bes4 bes bes bes8~ | \tuplet 3/2 {bes4 bes bes} bes4 bes | ees des bes2 |% powering compulsive acquisition despite our bothered minds Black
+
+          r8 ees4 ees des ees16 des | \tuplet 5/4 { ees4 des ees des f~ } | % Black Friday, Cyber Monday, Giving Tue
+          f4 ees des8 des ees8. ees16~ | ees8 des ees des ees des ees des16 f~ | % Tuesday, Work-it-off Wednesday, Debt consolidation Thurs
+          f4 bes, bes bes | bes bes bes bes |  bes bes bes bes | bes2 bes | % day is the worst pray Jesus get me through your gd 4 saken birthday
+
+          r4 fis' d2 | r4 dis b4. b8 | % Merry Christmas. I
+          c cis dis e fis g a bes | c4 r8 cis4 r8 a4~ | a1 | r \bar "|." % hope you have... it's blue.
         }
       }
     }
@@ -91,13 +95,14 @@ verse = \lyricmode {
 
   Di -- a -- be -- tes fer -- ti -- li -- zers flow like fos -- sils out of third world mines
   pow -- er -- ing com -- pul -- sive ac -- qui -- si -- tion des -- pite our bot -- hered minds
-  Black Fri -- day, Cy -- ber Mon -- day, Giv -- ing Tues -- day, Work- -- it- -- off Wednes -- day, Debt Con -- so -- li -- da -- tion
-  Thurs -- day in the worst way pray -- ing
-  Je -- sus get me through your God- -- for -- sa -- ken birth -- day
+  Black Fri -- day, Cy -- ber Mon -- day,
+  Giv -- ing Tues -- day, Work- -- it- -- off Wednes -- day,
+  Debt -- ors Thurs -- day is the worst pray Je -- sus
+  get me through your God- -- for -- sa -- ken birth -- day
 
-  % Now it makes it's way to thrift stores and estate sales, ultimately
-  % landing in a landfill so excuse Mister Grinch here
-  % if it makes me feel a little ill.
+  Mer -- ry Christ -- mas.
+  I hope you have a white one
+  but for me it's blue.
 
 
   % INSTRUMENTAL SOLO
@@ -119,6 +124,12 @@ harmonies = \chordmode {
   bes:min | bes:min | bes:min | bes:min |
   f2.:min7.9- bes4:9+ | bes1:9+ | g1:maj7 | fis:maj7 | % needy greedy
   % blue xmas repeats then next verse
+  bes:min | bes:min | bes:min | bes:min | % words start
+  bes:min | bes:min | bes:min | bes:min |
+  des:min | des:min | des:min | des:min |
+  bes:min | bes:min | bes:min | bes:min |
+  bes1:5+/c | ees:5+ |
+  d2 dis | fis:maj7.5- g:maj7.5-/a | d1 | d |
 }
 
 
