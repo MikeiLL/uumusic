@@ -30,8 +30,8 @@ melody = \relative c' {
     \alternative {
       \new Voice = "verse" {
         {
-          r2 bes4 bes8 bes~ | bes4 bes bes8 bes4 bes8~ | bes4 ees ees8 des4. | ees8 des4 f4. r4 | % Had a nightmare; stuck in Wallmart and I could'nt leave.
-          r2 bes,4 bes8 bes~ | bes4 bes8 bes4 bes8 bes bes | \tuplet 3/2 {bes4. bes4 bes4. bes4 ees4~} | ees4 des bes r | % Isles and isles of blow up Santas, raindeer, snowmen, Chrismas trees.
+          r2 bes4 bes8 bes~ | bes4 bes bes8 bes4 bes8~ | bes4 ees ees8 des4. | des4. bes4. bes4 | % Had a nightmare; stuck in Wallmart and I could'nt leave.
+          r2 bes4 bes8 bes~ | bes4 bes8 bes4 bes8 bes bes | \tuplet 3/2 {bes4. bes4 bes4. bes4 ees4~} | ees4 des bes r | % Isles and isles of blow up Santas, raindeer, snowmen, Chrismas trees.
           \tuplet 3/2 {ees4 ees des ees ees des} | \tuplet 3/2 {ees ees des ees2 des4} | ees4 des8 ees ees4 des | f2 r | % Endless or seemingly endless supplies of slave produced impulse buys.
           bes,4 bes8 bes4 bes bes8~ | bes4 bes8 bes4 bes f'8~ | f4 ees des ees8 bes~ | bes4 r c des | % Gifted and re-gifted until some poor hoarder dies. It's a
 
@@ -96,46 +96,22 @@ refrain_two = \lyricmode {
 
 verse = \lyricmode {
 
-  Had a night -- mare; stuck in Wall -- mart and I could -- n't leave.
-  Isles and isles of blow up San -- tas, rain -- deer, snow -- men, Christ -- mas trees.
+  Had a night -- mare; stuck in Wall -- mart and I could not leave.
+  Miles of isles of blow up San -- tas, rain -- deer, snow -- men, Christ -- mas trees.
   End -- less or seem -- ing -- ly end -- less sup -- plies of slave pro -- duced im -- pulse buys.
   Gif -- ted and re- -- gif -- ted un -- til some poor hoar -- der dies.
 
   It's a time when the gree -- dy
   give a dime to the nee -- dy.
 
-  % Then it makes it's way to thrift stores and estate sales, ultimately
-  % landing in a landfill so excuse Mister Grinch here if it makes me ill.
-
-  Side -- walk San -- ta Claus -- es are
-  Much, much, much too thin.
-  They're wear -- ing fan -- cy rent -- ed cos -- tumes,
-  False beards
-  And big fat pho -- ny grins.
-
-  And near -- ly eve -- ry -- one's stand -- ing 'round
-  Hold -- ing out their emp -- ty hand
-  Or tin cup.
-  Gim -- me, gim -- me
-  Gim -- me, gim -- me, gim -- me!
-  Fill my stock -- ing up,
-  All the way up.
+  Diabetes fertilizers flow like fossils out of third world mines
+  powering compulsive acquisition despite body and mind
+  % Now it makes it's way to thrift stores and estate sales, ultimately
+  % landing in a landfill so excuse Mister Grinch here
+  % if it makes me feel a little ill.
 
 
   % INSTRUMENTAL SOLO
-
-  Lots of hun -- gry, home -- less child -- ren
-  In your own back yards
-  While you're VED -- DY, VED -- DY bu -- sy
-  Ad -- dress -- ing twen -- ty zil -- lion Christ -- mas cards.
-
-  Yule -- tide is the sea -- son to be seen
-  And, oh, to give, and ah, to share,
-  But all you De -- cem -- ber do- -- good -- ers rush a -- round
-  And rant and rave and loud -- ly blare
-  Mer -- ry Christ -- mas!
-  I hope you have a white one,
-  But for me it' blue!
 
 }
 
@@ -153,9 +129,11 @@ harmonies = \chordmode {
   des:min | des:min | des:min | des:min |
   bes:min | bes:min | bes:min | bes:min |
   f2.:min7.9- bes4:9+ | bes1:9+ | g1:maj7 | fis:maj7 | % needy greedy
-  % blue xmas
-  c:min7 | c:min7 | c:min7 | f4.:7 bes:7 bes4:7 |
-  c1:min7 | c:min7 | c:min7 | f4.:7 bes:7 ees4:7 |
+  % blue xmas repeats then next verse
+  bes:min | bes:min | bes:min | bes:min |
+  bes:min | bes:min | bes:min | bes:min |
+  des:min | des:min | des:min | des:min |
+  bes:min | bes:min | bes:min | bes:min |
 }
 
 
