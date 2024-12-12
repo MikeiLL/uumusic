@@ -21,24 +21,19 @@ melody = \relative c' {
     d,2.~ d8 ees~ | ees b~ b4 r2 | % Blue Xmas.,
     c8 cis dis e fis g a bes | c4 des8 bes4. b4 |% When you're blue at ...You see right through all
     c8 aes4. a4 bes8 ges~ | ges4 g4 aes8 e4. | % the waste All the sham All the haste
-    r2. r8 ees | f ees4. des4 bes | r1 | r | % And plain ole bad taste.
+    r2. r8 ees | f ees4. des4 bes | % And plain ole bad taste.
     %
-    \tuplet 3/2 { r4 bes bes } \tuplet 5/2 { bes bes bes bes bes } | % Sidewalk Santa Clauses are
-    \tuplet 3/2 { des bes des } ees8 bes4. | % Much, much, much too thin.
-    % They're wearing fancy rented costumes,
-    % False beards
-    % And big fat phony grins.
+
+    r2 bes4 bes8 bes~ | bes4 bes bes8 bes4 bes8~ | bes4 ees ees8 des4. | ees8 des4 f4. r4 | % Had a nightmare; stuck in Wallmart and I could'nt leave.
+    r2 bes,4 bes8 bes~ | bes4 bes8 bes4 bes8 bes bes | \tuplet 3/2 {bes4. bes4 bes4. bes4 ees4~} | ees4 des bes r | % Isles and isles of blow up Santas, raindeer, snowmen, Chrismas trees.
+    \tuplet 3/2 {ees4 ees des ees ees des} | \tuplet 3/2 {ees ees des ees2 des4} | ees4 des8 ees ees4 des | f2 r | % Endless or seemingly endless supplies of slave produced impulse buys.
+    bes,4 bes8 bes4 bes bes8~ | bes4 bes8 bes4 bes f'8~ | f4 ees des ees8 bes~ | bes4 r c des | % Gifted and re-gifted until some poor hoarder dies. It's a
+
+    % Then it makes it's way to thrift stores and estate sales, ultimately
+    % landing in a landfill so excuse Mister Grinch here if it makes me ill.
     %
-    % And nearly everyone's standing ‘round
-    % Holding out their empty hand
-    % Or tin cup.
-    % Gimme, gimme
-    % Gimme, gimme, gimme!
-    % Fill my stocking up,
-    % All the way up.
-    %
-    % It's a time when the greedy
-    % Give a dime to the needy.
+    ees des aes' ges~ | ges b2 b8 c | % time when the greedy Give a
+    % dime to the needy.
     %
     % Blue Christmas.
     % All the paper, tinsel, and the  falderal (fall-de-rawl).
@@ -76,6 +71,15 @@ verse = \lyricmode {
   When you're blue at Christ -- mas -- time,
   you see right through all the waste all the sham all the haste...
   and plain ole bad taste.
+
+
+  Had a night -- mare; stuck in Wall -- mart and I could -- n't leave.
+  Isles and isles of blow up San -- tas, rain -- deer, snow -- men, Christ -- mas trees.
+  End -- less or seem -- ing -- ly end -- less sup -- plies of slave pro -- duced im -- pulse buys.
+  Gif -- ted and re- -- gif -- ted un -- til some poor hoar -- der dies.
+
+  Then it makes it's way to thrift stores and estate sales, ultimately
+  landing in a landfill so excuse Mister Grinch here if it makes me ill.
 
   Side -- walk San -- ta Claus -- es are
   Much, much, much too thin.
@@ -116,13 +120,6 @@ verse = \lyricmode {
   I hope you have a white one,
   But for me it' blue!
 
-  I had a nightmare that I was stuck in Wallmart and couldn't leave.
-  Isles and isles of blow up Santa's, raindeer, snowmen, trees and wreaths.
-  Endless or seemingly endless supplies of slave and child labor produced impulse buys.
-  Gifted and re-gifted until the cleanup after some some poor hoarder dies.
-
-  Then it makes it's way to thrift stores and estate sales, ultimately
-  landing in a landfill so excuse Mister Grinch here if it makes me ill.
 }
 
 harmonies = \chordmode {
@@ -132,9 +129,12 @@ harmonies = \chordmode {
   c:min7 | c:min7 | c:min7 | f4.:7 bes:7 bes4:7 |
   c1:min7 | c:min7 | c:min7 | f4.:7 bes:7 ees4:7 |
   ees8:7 aes4.:7 des4. ges8:7 | ges4 b4.:7 e4.:7 |
-  e1:7 | e1:7 |
+  e1:7 | e:7 |
   % Verse
-  bes1:min |
+  bes:min | bes:min | bes:min | bes:min | % words start
+  bes:min | bes:min | bes:min | bes:min |
+  des:min | des:min | des:min | des:min |
+  bes:min | bes:min | bes:min | bes:min |
 }
 
 
