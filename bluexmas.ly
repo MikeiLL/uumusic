@@ -83,7 +83,7 @@ verse = \lyricmode {
   False beards
   And big fat pho -- ny grins.
 
-  And near -- ly eve -- ry -- one's stand -- ing ‘round
+  And near -- ly eve -- ry -- one's stand -- ing 'round
   Hold -- ing out their emp -- ty hand
   Or tin cup.
   Gim -- me, gim -- me
@@ -115,6 +115,11 @@ verse = \lyricmode {
   Mer -- ry Christ -- mas!
   I hope you have a white one,
   But for me it' blue!
+
+  I had a nightmare that I was stuck in Wallmart and couldn't leave.
+  Isles and isles of blow up Santa's, raindeer, snowmen, trees and wreaths.
+  Endless or seemingly endless supplies of slave and child labor produced impulse buys.
+  Gifted and re-gifted until some poor hoarder dies.
 }
 
 harmonies = \chordmode {
