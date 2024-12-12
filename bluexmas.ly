@@ -119,7 +119,10 @@ verse = \lyricmode {
   I had a nightmare that I was stuck in Wallmart and couldn't leave.
   Isles and isles of blow up Santa's, raindeer, snowmen, trees and wreaths.
   Endless or seemingly endless supplies of slave and child labor produced impulse buys.
-  Gifted and re-gifted until some poor hoarder dies.
+  Gifted and re-gifted until the cleanup after some some poor hoarder dies.
+
+  Then it makes it's way to thrift stores and estate sales, ultimately
+  landing in a landfill so excuse Mister Grinch here if it makes me ill.
 }
 
 harmonies = \chordmode {
