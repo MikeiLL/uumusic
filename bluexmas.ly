@@ -11,29 +11,38 @@ melody = \relative c' {
   \key c \major
   \time 4/4
   \set Score.voltaSpannerDuration = #(ly:make-moment 4/4)
-  \new Voice = "verse" {
-    r4 fis d2\fermata | r4 dis b4.\fermata b8 | % Merry Christmas. I
-    c cis dis e fis g a bes | c4 r8 cis4 r8 a4~ | a1 | r | % hope you have... it's blue.
+  \new Voice = "intro" {
+      r4 fis d2\fermata | r4 dis b4.\fermata b8 | % Merry Christmas. I
+      c cis dis e fis g a bes | c4 r8 cis4 r8 a4~ | a1 | r | % hope you have... it's blue.
+    }
+      \repeat volta 2 {
+        \new Voice = "refrain" {
+        d,2.~ d8 ees~ | ees b~ b4 r2 | % Blue Christmas.
+        c8 cis dis e fis g a bes | c4 des8 bes4. r4 | % That's the way you see it when you're feeling blue.
+      %
+        d,2.~ d8 ees~ | ees b~ b4 r2 | % Blue Xmas.,
+        c8 cis dis e fis g a bes | c4 des8 bes4. b4 |% When you're blue at ...You see right through all
+        c8 aes4. a4 bes8 ges~ | ges4 g4 aes8 e4. | % the waste All the sham All the haste
+        r2. r8 ees | f ees4. des4 bes | % And plain ole bad taste.
+      }
+    }
     %
-    d,2.~ d8 ees~ | ees b~ b4 r2 | % Blue Christmas.
-    c8 cis dis e fis g a bes | c4 des8 bes4. r4 | % That's the way you see it when you're feeling blue.
-    %
-    d,2.~ d8 ees~ | ees b~ b4 r2 | % Blue Xmas.,
-    c8 cis dis e fis g a bes | c4 des8 bes4. b4 |% When you're blue at ...You see right through all
-    c8 aes4. a4 bes8 ges~ | ges4 g4 aes8 e4. | % the waste All the sham All the haste
-    r2. r8 ees | f ees4. des4 bes | % And plain ole bad taste.
-    %
+    \alternative {
+      \new Voice = "verse" {
+        {
+          r2 bes4 bes8 bes~ | bes4 bes bes8 bes4 bes8~ | bes4 ees ees8 des4. | ees8 des4 f4. r4 | % Had a nightmare; stuck in Wallmart and I could'nt leave.
+          r2 bes,4 bes8 bes~ | bes4 bes8 bes4 bes8 bes bes | \tuplet 3/2 {bes4. bes4 bes4. bes4 ees4~} | ees4 des bes r | % Isles and isles of blow up Santas, raindeer, snowmen, Chrismas trees.
+          \tuplet 3/2 {ees4 ees des ees ees des} | \tuplet 3/2 {ees ees des ees2 des4} | ees4 des8 ees ees4 des | f2 r | % Endless or seemingly endless supplies of slave produced impulse buys.
+          bes,4 bes8 bes4 bes bes8~ | bes4 bes8 bes4 bes f'8~ | f4 ees des ees8 bes~ | bes4 r c des | % Gifted and re-gifted until some poor hoarder dies. It's a
 
-    r2 bes4 bes8 bes~ | bes4 bes bes8 bes4 bes8~ | bes4 ees ees8 des4. | ees8 des4 f4. r4 | % Had a nightmare; stuck in Wallmart and I could'nt leave.
-    r2 bes,4 bes8 bes~ | bes4 bes8 bes4 bes8 bes bes | \tuplet 3/2 {bes4. bes4 bes4. bes4 ees4~} | ees4 des bes r | % Isles and isles of blow up Santas, raindeer, snowmen, Chrismas trees.
-    \tuplet 3/2 {ees4 ees des ees ees des} | \tuplet 3/2 {ees ees des ees2 des4} | ees4 des8 ees ees4 des | f2 r | % Endless or seemingly endless supplies of slave produced impulse buys.
-    bes,4 bes8 bes4 bes bes8~ | bes4 bes8 bes4 bes f'8~ | f4 ees des ees8 bes~ | bes4 r c des | % Gifted and re-gifted until some poor hoarder dies. It's a
-
+          \tuplet 3/2 {ees2 des4 aes'2 ges4~} | ges b2 r8 b,16 c | % time when the greedy Give a
+          \tuplet 3/2 {des2 c4 ges'2 f4~} | f b2 r4 | % dime to the needy.
+        }
+      }
+    }
     % Then it makes it's way to thrift stores and estate sales, ultimately
     % landing in a landfill so excuse Mister Grinch here if it makes me ill.
     %
-    ees des aes' ges~ | ges b2 b8 c | % time when the greedy Give a
-    % dime to the needy.
     %
     % Blue Christmas.
     % All the paper, tinsel, and the  falderal (fall-de-rawl).
@@ -56,14 +65,15 @@ melody = \relative c' {
     % Merry Christmas!
     % I hope you have a white one,
     % But for me it' blue!
-  }
 }
 
-verse = \lyricmode {
+intro = \lyricmode {
   Mer -- ry Christ -- mas.
   I hope you have a white one
   but for me it's blue.
+}
 
+refrain_one = \lyricmode {
   Blue Christ -- mas.
   That's the way you see it when you're feel -- ing blue.
 
@@ -72,14 +82,30 @@ verse = \lyricmode {
   you see right through all the waste all the sham all the haste...
   and plain ole bad taste.
 
+}
+
+refrain_two = \lyricmode {
+  Blue Christ -- mas.
+  All the pa -- per, tin -- sel, and the fal -- de -- ral.
+  Blue Christ -- mas.
+  Peo -- ple giv -- ing gifts that mat -- ter not at all.
+  Bit -- ter gall—
+  What I call fal -- de -- ral.
+
+}
+
+verse = \lyricmode {
 
   Had a night -- mare; stuck in Wall -- mart and I could -- n't leave.
   Isles and isles of blow up San -- tas, rain -- deer, snow -- men, Christ -- mas trees.
   End -- less or seem -- ing -- ly end -- less sup -- plies of slave pro -- duced im -- pulse buys.
   Gif -- ted and re- -- gif -- ted un -- til some poor hoar -- der dies.
 
-  Then it makes it's way to thrift stores and estate sales, ultimately
-  landing in a landfill so excuse Mister Grinch here if it makes me ill.
+  It's a time when the gree -- dy
+  give a dime to the nee -- dy.
+
+  % Then it makes it's way to thrift stores and estate sales, ultimately
+  % landing in a landfill so excuse Mister Grinch here if it makes me ill.
 
   Side -- walk San -- ta Claus -- es are
   Much, much, much too thin.
@@ -95,15 +121,6 @@ verse = \lyricmode {
   Fill my stock -- ing up,
   All the way up.
 
-  It's a time when the greed -- y
-  Give a dime to the need -- y.
-
-  Blue Christ -- mas.
-  All the paper, tinsel, and the fal -- de -- ral.
-  Blue Christ -- mas.
-  Peo -- ple giv -- ing gifts that mat -- ter not at all.
-  Bitter gall—
-  What I call fal -- de -- ral.
 
   % INSTRUMENTAL SOLO
 
@@ -135,6 +152,10 @@ harmonies = \chordmode {
   bes:min | bes:min | bes:min | bes:min |
   des:min | des:min | des:min | des:min |
   bes:min | bes:min | bes:min | bes:min |
+  f2.:min7.9- bes4:9+ | bes1:9+ | g1:maj7 | fis:maj7 | % needy greedy
+  % blue xmas
+  c:min7 | c:min7 | c:min7 | f4.:7 bes:7 bes4:7 |
+  c1:min7 | c:min7 | c:min7 | f4.:7 bes:7 ees4:7 |
 }
 
 
@@ -145,7 +166,10 @@ harmonies = \chordmode {
       \harmonies
     }
     \new Voice = "one" { \melody }
+    \new Lyrics \lyricsto "intro" \intro
     \new Lyrics \lyricsto "verse" \verse
+    \new Lyrics \lyricsto "refrain" \refrain_one
+    \new Lyrics \lyricsto "refrain" \refrain_two
   >>
   \layout {
         #(layout-set-staff-size 25)
