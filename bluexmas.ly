@@ -121,7 +121,7 @@ harmonies = \chordmode {
   bes:min | bes:min | bes:min | bes:min | % words start
   bes:min | bes:min | bes:min | bes:min |
   des:min | des:min | des:min | des:min |
-  bes:min | bes:min | bes:min | bes:min |
+  bes:min | bes:min | bes:min | c:7 |
   f2.:min7.9- bes4:9+ | bes1:9+ | g1:maj7 | fis:maj7 | % needy greedy
   % blue xmas repeats then next verse
   bes:min | bes:min | bes:min | bes:min | % words start
