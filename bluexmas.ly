@@ -112,17 +112,17 @@ verse = \lyricmode {
 harmonies = \chordmode {
   % Intro
   bes1:5+/c | ees:5+ |
-  d2 dis | fis:maj7.5- g:maj7.5-/a | d1 | d |
-  c:min7 | c:min7 | c:min7 | f4.:7 bes:7 bes4:7 |
-  c1:min7 | c:min7 | c:min7 | f4.:7 bes:7 ees4:7 |
-  ees8:7 aes4.:7 des4. ges8:7 | ges4 b4.:7 e4.:7 |
-  e1:7 | e:7 |
+  d2:7 dis:7 | fis:maj7.5- g:maj7.5-/a | d1 | d |
+  c:min7 | c:min7 | c:min7 | f4.:5+7 bes:5+7 bes4:5+7 |
+  c1:min7 | c:min7 | c:min7 | f4.:5+7 bes:5+7 ees4:5+7 |
+  ees8:5+7 aes4.:5+7 des4.:5+ ges8:5+7 | ges4:5+7 b4.:5+7 e4.:5+7 |
+  e1:5+7 | e:5+7 |
   % Verse
   bes:min | bes:min | bes:min | bes:min | % words start
   bes:min | bes:min | bes:min | bes:min |
   des:min | des:min | des:min | des:min |
   bes:min | bes:min | bes:min | c:7 |
-  f2.:min7.9- bes4:9+ | bes1:9+ | g1:maj7 | fis:maj7 | % needy greedy
+  f2.:5+7.9- bes4:5+7.9+ | bes1:5+7.9+ | g1:maj7.5- | fis:maj7.5- | % needy greedy
   % blue xmas repeats then next verse
   bes:min | bes:min | bes:min | bes:min | % words start
   bes:min | bes:min | bes:min | bes:min |
