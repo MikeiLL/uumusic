@@ -50,7 +50,7 @@ melody = \relative c' {
           f4 bes, bes bes | bes bes bes bes |  bes bes bes bes | bes2 bes | % day is the worst pray Jesus get me through your gd 4 saken birthday
 
           r4 fis' d2 | r4 dis b4. b8 | % Merry Christmas. I
-          c cis dis e fis g a bes | c4 r8 cis4 r8 a4~ | a1 | r \bar "|." % hope you have... it's blue.
+          c cis dis e fis g a bes | c4 r8 cis4 r8 a4~ | a1\fermata \bar "|." % hope you have... it's blue.
         }
       }
     }
@@ -112,7 +112,7 @@ verse = \lyricmode {
 harmonies = \chordmode {
   % Intro
   bes1:5+/c | ees:5+ |
-  d2:7 dis:7 | fis:maj7.5- g:maj7.5-/a | d1:12.5+ | d:12.5+ |
+  d2:7 dis:7 | fis4.:maj7.5- g4.:maj7.5-/a d4:12.5+ | d1:12.5+ | d:12.5+ |
   c:min7 | c:min7 | c:min7 | f4.:5+7 bes:5+7 bes4:5+7 |
   c1:min7 | c:min7 | c:min7 | f4.:5+7 bes:5+7 ees4:5+7 |
   ees8:5+7 aes4.:5+7 des4.:5+ ges8:5+7 | ges4:5+7 b4.:5+7 e4.:5+7 |
@@ -129,7 +129,7 @@ harmonies = \chordmode {
   ees:min | ees:min | ees:min | ees:min |
   bes:min | bes:min | bes:min | bes:min |
   bes1:5+/c | ees:5+ |
-  d2 dis | fis:maj7.5- g:maj7.5-/a | d1:12.5+ | d:12.5+ |
+  d2 dis |  fis4.:maj7.5- g4.:maj7.5-/a d4:12.5+ | d1:12.5+
 }
 
 
