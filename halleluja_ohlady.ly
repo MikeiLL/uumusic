@@ -16,7 +16,7 @@ melody =  \transpose c bes { \relative c {
     g4 g8 g4 g8 | a a a4 r8 e | g4 g8 g4 g8 | a4 a8 a4 a8 |
     a8 a4 a8 a4 | a4 g8 g4 e8 | a8( g) g4 r | r2 r8 e |
     g4 g8 g4 g8 | a4 a8 b4 b8 | c4 c8 c4 c8 | c c d4 r8 d8 |
-    d8 d4 d d8 | e4 e8 e4 d8 | d( c4) c r8 | r2 e,8 g |
+    d8 d4 d d8 | e4 e8 e4 d8 | d( c4) c r8 | r2^\markup { \bold CHORUS }  e,8 g |
     a4. a4 r8 | r2 a8 g | e4. e4 r8 | r2 e8 g |
     a4. a4 r8 | r2 a8 g | e2( f8 e | d2~ d8 c) |
     c2 r4 | r2. | r2. | r2. \bar "|."
@@ -68,7 +68,7 @@ harmonies = \transpose c bes { \chordmode {
 
 \markup \fill-line {
   \column {
-" "
+%{ " "
 " "
   "You hold your lamp beside the door – "
   "through silent lips you call the poor "
@@ -94,6 +94,6 @@ harmonies = \transpose c bes { \chordmode {
   "that hope can turn into hallelujah. "
   " "
   "[Chorus - Repeated]"
-  "Hallelujah, Hallelujah Hallelujah, Hallelujah"
+  "Hallelujah, Hallelujah Hallelujah, Hallelujah" %}
   }
 }
