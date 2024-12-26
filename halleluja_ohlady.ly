@@ -2,11 +2,11 @@
 
 \header {
   title = "Hallelujah"
-  composer = "by Leonard Cohen (Arranged by Mike iLL Kilmer for UU Pensacola)"
+  composer = "Lyrics by Carla & Pat Quinn-Gleich.  Music by Leonard Cohen and used with permission."
 }
 
 \paper{ print-page-number = ##f bottom-margin = 0.5\in }
-melody =  \transpose c bes { \relative c {
+melody =  \transpose c g { \relative c {
   \clef treble
   \key c \major
   \time 6/8
@@ -37,7 +37,7 @@ verse = \lyricmode {
 
 }
 
-harmonies = \transpose c bes { \chordmode {
+harmonies = \transpose c g { \chordmode {
   % Intro
   \partial 8 r8 |
   c2. | a:min | c2. | a:min |
@@ -61,7 +61,7 @@ harmonies = \transpose c bes { \chordmode {
     \new Lyrics \lyricsto "verse" \verse
   >>
   \layout {
-        #(layout-set-staff-size 25)
+        #(layout-set-staff-size 22)
     }
   \midi { }
 }
