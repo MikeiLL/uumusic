@@ -35,7 +35,7 @@ harmonies = \chordmode {
   % Intro
   \partial 4. f4.:maj7 |
   f1:maj7 | f:min6/c | f:maj7 | f:min6 |
-  f:maj7 | f:min6 | f:maj7 | bes2:maj7 f:min7/bes |
+  f:maj7 | f:min6 | f:maj7 | bes2:maj7 bes:min7+ |
   d1:min | g | g:min | c:7 |
 }
 
