@@ -29,10 +29,10 @@ melody = \relative c' {
         g d d4 r2 | r a'8 g g( f) % cluded, too %(Ooh) We invite
         a4 r2. | r8 d, d4 g8 g f e|% you % (Ooh) to make your investment
         d4 r2. | r2 a'8 g g f | % true % (Ooh) When I come to
-        a4 a r2 | % church now % (Ooh)
-         % I know that I do my part %(Ooh)
-         % I am invested %(Ooh)
-         % Where everyone belongs %(Ooh)
+        a4 a r2 | r4. f8 a4 g8 f | % church now % (Ooh) I know that I
+        g g4 d4. r4 | r4 a'8 c4. a8( g) % do my part %(Ooh) I am in
+        g4 f8( d4. ) r4 | r4. d8 a'8 a g f | % vested %(Ooh) Where everyone be
+        d4 r2. | r1 \bar "|." % longs %(Ooh)
       }
       \new Voice = "chorus" {
         \voiceTwo
@@ -64,7 +64,13 @@ chorus = \lyricmode {
 
 harmonies = \chordmode {
   % Intro
-  d1:7 |
+  d1:7 | d:7 | d:7 | d:7 |
+  d1:7 | d:7 | d:7 | d:7 |
+  d:7 |
+  d:m | d:m | g | g |
+  d:m | d:m | g | g |
+  d:m | d:m | g | g |
+  d:m | d:m | g | g |
 }
 
 
