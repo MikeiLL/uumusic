@@ -22,7 +22,6 @@ melody = \relative c' {
         { d4 r2. | }
         { r4 r \context Voice = "verse" { a' g8 f } | } % Here I’m in --
       }
-      <<
       \context Voice = "verse" {
         \voiceOne
         a2 r | r4. f8 a4 g8 f | % spired Involved and in %(Ooh)
@@ -34,12 +33,18 @@ melody = \relative c' {
         g4 f8( d4. ) r4 | r4. d8 a'8 a g f | % vested %(Ooh) Where everyone be
         d4 r2. | r1 \bar "|." % longs %(Ooh)
       }
-      \new Voice = "chorus" {
-        \voiceTwo
-        r2 d4( e | f2) r2 |
-      }
-      >>
   }
+}
+
+choir = \relative c' {
+      \new Voice = "chorus" {
+        r1 | r | r | r |
+        r | r | r | r | r |
+        r2 d4( e | f1) | r2. g4( | f2) r |
+        r2 d4( e | f2 a | g1) | r |
+        r2 d4( e | f1) | r2. g4( | f2) r |
+        r2 d4( e | f2 a | bes1) | r |
+      }
 }
 
 verse = \lyricmode {
@@ -59,6 +64,9 @@ verse = \lyricmode {
 }
 
 chorus = \lyricmode {
+  Ooh __ Ooh
+  Ooh __
+  Ooh __ Ooh
   Ooh __
 }
 
@@ -82,6 +90,7 @@ harmonies = \chordmode {
     }
     \new Voice = "one" { \melody }
     \new Lyrics \lyricsto "verse" \verse
+    \new Voice = "two" { \choir }
     \new Lyrics \lyricsto "chorus" \chorus
   >>
   \layout {
