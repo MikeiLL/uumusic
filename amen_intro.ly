@@ -1,7 +1,7 @@
 \version "2.18.2"
 
 \header {
-  title = "Song"
+  title = "Amen Intro"
   composer = "Arranged by Mike iLL Kilmer for UU Pensacola"
 }
 
@@ -17,7 +17,22 @@ melody = \relative c' {
 }
 
 verse = \lyricmode {
-  Hi.
+  Turn the light from hea -- ven, Lord.
+  Shine on me.
+  Turn the light from hea -- ven, Lord.
+  Shine on me. Shine on me.
+  (Turn on the lights and put me on the right road)
+  Help me find my way, Lord
+  Turn on the lights from heaven, Lord
+  Shine on me, shine on me
+
+  Shine on me, shine on me
+  Shine on me, shine on me
+
+  Shine on me, shine on me
+  Shine on me, shine on me
+  Shine on me, shinе on me
+  Shine on me, shinе on me
 }
 
 harmonies = \chordmode {
