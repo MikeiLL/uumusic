@@ -33,7 +33,7 @@ verse = \lyricmode {
 harmonies = \chordmode {
   % Intro
   g1 | g | g | g |
-  c | c | g2:/d dis:m7.5- | e:m fis |
+  c | c | c | c |
   g1 | e:m | g2 b:7/dis | e:m e:m/d | c a:m |
   d d:7 | g1 | g |
 }
