@@ -42,7 +42,7 @@ harmonies = \chordmode {
   r4. |
   g4. d | e:m e:m | g d | g g |
   a:m b:7 | c4. cis:m7.5- | g2. | d:7 | % harmonies of liberty... re -
-  g4. b:7 | e2. | a4.:m b:7 | c2. | g | g | g |  % joicing rise... rolling sea
+  g4. b:7 | e2. | a4.:m b:7 | c2. | g | d:7 | g |  % joicing rise... rolling sea
   g | e:m | e:m | d | d | % sing a song full of the faith that the dark past has taught us, sing a
   c:m | c:m | g4. fis:m7.5- | d:7 d:7 | % song full of the hope that the present has brought us; facing the
   g4. b:7 | e2. | a4.:m b:7 | c4. cis:m7.5- | g2. | d:7 | g | % rising sun of our new day begun, let us march on till victory is won.
