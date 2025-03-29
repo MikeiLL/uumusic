@@ -48,9 +48,9 @@ verse = \lyricmode {
 
 harmonies = \chordmode {
   % Intro
-  f2:/a d:min | f:/c bes | cis:5+ f:/c | b:m7.5- b:maj |
-  f2:/a d:min | f:/c bes | cis:5+ f:/c | b:m7.5- b:maj |
-  f:/a bes | b:m7.5- c4 c:7/bes | d2:/a g:min/bes | c:maj9 g:min |
+  f2:/a d:m | f:/c bes | cis:5+ f:/c | b:m7.5- bes:maj |
+  f2:/a d:m | f:/c bes | cis:5+ f:/c | b:m7.5- bes:maj |
+  f:/a bes | b:m7.5- c4 c:7/bes | d2:/a g:m/bes | c:maj9 g:min |
 }
 
 
