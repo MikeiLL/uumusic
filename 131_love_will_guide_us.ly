@@ -22,7 +22,7 @@ melody = \relative c' {
 
 verse = \lyricmode {
   Love will guide us, peace has tried us,
-  hope in -- side us wil lead the way on the
+  hope in -- side us will lead the way on the
   road from greed to giv -- ing Love will
   guide us through the hard night.
 }
