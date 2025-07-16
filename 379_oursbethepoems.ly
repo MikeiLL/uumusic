@@ -11,15 +11,33 @@ melody = \relative c' {
   \key a \major
   \time 7/8
   \set Score.voltaSpannerDuration = #(ly:make-moment 4/4)
-  \new Voice = "verse" {
-    d4 d8 d d4 d8 | fis( d) d4 r4. | % Ours be the poems of all tongues,
-    d4 d8 d d4 d8 | fis( d) d4 r4. | % Ours be the poems of all tongues,
-    d4 d8 d fis fis fis | gis4 a4. r4 |  % All things of loveliness and worth.
-    d,4 d8 d fis fis fis | gis4 a4. r4 |  % All things of loveliness and worth.
-    d,8 fis4 d8 fis4 d8 | fis4 d c r8 | % All arts, all a -- ges, and all songs,
-    d8 fis4 d8 fis4 d8 | fis4 d c r8 | % All arts, all a -- ges, and all songs,
-    d8 d4 d8 fis4 gis8 | gis4 a d, r8 | % One life, one beau -- ty on the earth.
-    d8 d4 d8 fis4 gis8 | gis4 a d, r8 | % One life, one beau -- ty on the earth.
+  \repeat volta 2 {
+    \new Voice = "verse" {
+      d4 d8 d d4 d8 | fis( d) d4 r4. | % Ours be the poems of all tongues,
+      d4 d8 d d4 d8 | fis( d) d4 r4. | % Ours be the poems of all tongues,
+      d4 d8 d fis fis fis | gis4 a4. r4 |  % All things of loveliness and worth.
+      d,4 d8 d fis fis fis | gis4 a4. r4 |  % All things of loveliness and worth.
+      d,8 fis4 d8 fis4 d8 | fis4 d c r8 | % All arts, all a -- ges, and all songs,
+      d8 fis4 d8 fis4 d8 | fis4 d c r8 | % All arts, all a -- ges, and all songs,
+      d8 d4 d8 fis4 gis8 | gis4 a d, r8 | % One life, one beau -- ty on the earth.
+      d8 d4 d8 fis4 gis8 | gis4 a d, r8 | % One life, one beau -- ty on the earth.
+    }
+  }
+}
+
+bass = \relative c, {
+  \clef bass
+  \key a \major
+  \time 7/8
+  \new Voice = "bass" {
+    d8 fis a gis a d, a' | d,8 fis a gis a d, a' |
+    d,8 fis a gis a d, a' | d,8 fis a gis a d, a' |
+    d,8 fis a gis a d, a' | d,8 fis a gis a d, a' |
+    d,8 fis a gis a d, a' | d,8 fis a gis a d, a' |
+    d,8 fis a gis a d, a' | d,8 fis a gis a d, a' |
+    d,8 fis a gis a d, a' | d,8 fis a gis a d, a' |
+    d,8 fis a gis a d, a' | d,8 fis a gis a d, a' |
+    d,8 fis a gis a d, a' | d,8 fis a gis a d, a' |
   }
 }
 
@@ -36,7 +54,7 @@ verse = \lyricmode {
 
 harmonies = \chordmode {
   % Intro
-  c1
+  d1:7
 }
 
 
@@ -46,8 +64,13 @@ harmonies = \chordmode {
       \set chordChanges = ##t
       \harmonies
     }
-    \new Voice = "one" { \melody }
-    \new Lyrics \lyricsto "verse" \verse
+    \new PianoStaff {
+    <<
+      \new Voice = "one" { \melody }
+      \new Lyrics \lyricsto "verse" \verse
+      \new Voice = "bass" { \bass }
+    >>
+    }
   >>
   \layout {
         #(layout-set-staff-size 25)
