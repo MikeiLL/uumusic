@@ -38,7 +38,8 @@ harmonies = \chordmode {
   a1:m | f |
   1 | d2:dim g |
   a1:m | f |
-  c4 e:7 a:m a:7 | d2:m d:dim |
+  c4 e:7 a:m a:7 | d2:m e:m |
+  d:m g:sus4 | g:7 c |
 }
 
 
