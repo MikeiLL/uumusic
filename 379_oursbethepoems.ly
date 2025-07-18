@@ -30,14 +30,14 @@ bass = \relative c, {
   \key a \major
   \time 7/8
   \new Voice = "bass" {
-    d8 fis a gis a d, a' | d,8 fis a gis a d, a' |
-    d,8 fis a gis a d, a' | d,8 fis a gis a d, a' |
-    d,8 fis a gis a d, a' | d,8 fis a gis a d, a' |
-    d,8 fis a gis a d, a' | d,8 fis a gis a d, a' |
-    d,8 fis a gis a d, a' | d,8 fis a gis a d, a' |
-    d,8 fis a gis a d, a' | d,8 fis a gis a d, a' |
-    d,8 fis a gis a d, a' | d,8 fis a gis a d, a' |
-    d,8 fis a gis a d, a' | d,8 fis a gis a d, a' |
+    d8 fis a gis a e a| d,8 fis a gis a e a|
+    d,8 fis a gis a e a| d,8 fis a gis a e a|
+    d,8 fis a gis a e a| d,8 fis a gis a e a|
+    d,8 fis a gis a e a| d,8 fis a gis a e a|
+    d,8 fis a gis a e a| d,8 fis a gis a e a|
+    d,8 fis a gis a e a| d,8 fis a gis a e a|
+    d,8 fis a gis a e a| d,8 fis a gis a e a|
+    d,8 fis a gis a e a| d,8 fis a gis a e a|
   }
 }
 
