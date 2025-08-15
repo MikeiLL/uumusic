@@ -13,7 +13,7 @@ melody = \relative c' {
   \set Score.voltaSpannerDuration = #(ly:make-moment 4/4)
   \new Voice = "verse" {
     e2 d4 e | f1 | d2 c4 d | e1 |
-    a2 b4 a | d2. e8 f | d4. g,8 g'4 f | f2 e |
+    c2 b4 c | d2. e8 f | d4. g,8 g'4 f | f2 e |
     g2 c4 b | a1 | b2 c4 d | g,1 |
     e2 a4 e | f2. e8 f | d4. g,8 g'4 f | f2 e |
     g2 c4 b | a1 | b2 c4 d | g,1 |
@@ -32,7 +32,12 @@ verse = \lyricmode {
 
 harmonies = \chordmode {
   % Intro
-  c1
+  c1 | d:7 | g | c |
+  a:m | d:m | g | c2:sus c |
+  c1 | f:9 | g | e:m7 |
+  a:m | d:m7 | g | c2:sus c |
+  c1 | f:9 | g | e:m7 |
+  a:m | d:m7 | g | c |
 }
 
 
