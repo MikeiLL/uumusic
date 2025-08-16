@@ -23,7 +23,7 @@ melody = \relative c' {
     aes4. g f4 ees | c2. ees4 f | % lame that burns with -- in, Then our
     g4. ees bes'4 c | bes4. g ees4 g | % pro -- mise finds ful -- fill -- ment and our
     aes4. g f4 ees | ees2.~ ees2~ | ees2.~ ees2 | % fu -- ture can be -- gin.
-    r2. r2 | r2. r2 \bar "|."
+    r2. r2 | r2. ees4 f \bar "|."
   }
 }
 
@@ -40,11 +40,21 @@ verse = \lyricmode {
   flame that burns with -- in, Then our
   pro -- mise finds ful -- fill -- ment and our
   fu -- ture can be -- gin.
+
+  From the
 }
 
 harmonies = \chordmode {
   % Intro
-  e2. bes2:/d | c2.:m ees2:/bes | aes2. bes2 | ees2. aes2:/bes |
+  ees2. bes2:/d | c2.:m ees2:/bes | aes2. bes2 | ees2. aes2:/bes |
+  ees2. bes2:/d | c2.:m bes2 | aes2. ees2:/g | f2.:m7 bes2 |
+  ees2. bes2:/d | c2.:m ees2:/bes | des2. aes2 | bes4.:sus bes aes4 bes | % Chorus starts here When the
+  c2.:m bes2 | aes2. ees2:/g | f2.:m7 ees2:/g | aes2. bes4:sus bes | % ... ablaze when our
+  c2.:m ees2:/g | aes2. ees2 | des2. aes2 | bes4.:sus bes aes4 bes | % hunger and our passion ... when we
+  c2.:m bes2 | aes2. bes2:/g | % live with deep
+  f2.:m7 ees2:/g | aes2. bes4:sus bes | c2.:m ees2:/g |
+  aes2. ees2:/g | f2.:m7 bes4:sus bes |
+  ees2. bes2:/d | c2.:m ees2:/bes | aes2. bes2 | ees2. bes2 |
 }
 
 
