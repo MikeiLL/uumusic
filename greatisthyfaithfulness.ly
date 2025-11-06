@@ -1,0 +1,77 @@
+\version "2.18.2"
+
+\header {
+  title = "Great is thy Faithfulness"
+  composer = "Arranged by Mike iLL Kilmer for UU Pensacola"
+}
+
+\paper{ print-page-number = ##f bottom-margin = 0.5\in }
+melody = \relative c' {
+  \clef treble
+  \key d \major
+  \time 3/4
+  \set Score.voltaSpannerDuration = #(ly:make-moment 4/4)
+  \new Voice = "verse" {
+      fis4 fis fis | fis4. e8 d4 | g g g | g fis2 |% Great is thy faithfulness, O God, my Father;
+      b4 cis b | a4. g8 fis4 | e fis gis | a2. |% There is no shadow of turning with thee.
+      % Thou changest not, thy compassions, they fail not;
+      % As thou hast been, thou forever wilt be.
+      % Refrain:
+      % Great is thy faithfulness,
+      % Great is thy faithfulness,
+      % Morning by morning new mercies I see.
+      % All I have needed thy hand hast provided;
+      % Great is thy faithfulness,
+      % Lord unto me.
+  }
+}
+
+verse = \lyricmode {
+  Great is thy faith -- ful -- ness, O God, my Fa -- ther;
+  There is no sha -- dow of turn -- ing with thee.
+  Thou chang -- est not, thy com -- pas -- sions, they fail not;
+  As thou hast been, thou for -- e -- ver wilt be.
+  % Refrain:
+  Great is thy faith -- ful -- ness,
+  Great is thy faith -- ful -- ness,
+  Morn -- ing by morn -- ing new mer -- cies I see.
+  All I have need -- ed thy hand hast pro -- vi -- ded;
+  Great is thy faith -- ful -- ness,
+  Lord un -- to me.
+}
+
+harmonies = \chordmode {
+  % Great is thy faithfulness, O God, my Father;
+  % There is no shadow of turning with thee.
+  % Thou changest not, thy compassions, they fail not;
+  % As thou hast been, thou forever wilt be.
+  % Refrain:
+  % Great is thy faithfulness,
+  % Great is thy faithfulness,
+  % Morning by morning new mercies I see.
+  % All I have needed thy hand hast provided;
+  % Great is thy faithfulness,
+  % Lord unto me.
+}
+
+
+\score {
+  <<
+    \new ChordNames {
+      \set chordChanges = ##t
+      \harmonies
+    }
+    \new Voice = "one" { \melody }
+    \new Lyrics \lyricsto "verse" \verse
+  >>
+  \layout {
+        #(layout-set-staff-size 25)
+    }
+  \midi { }
+}
+
+\markup \fill-line {
+  \column {
+  ""
+  }
+}
