@@ -12,17 +12,17 @@ melody = \relative c' {
   \time 3/4
   \set Score.voltaSpannerDuration = #(ly:make-moment 4/4)
   \new Voice = "verse" {
-      fis4 fis fis | fis4. e8 d4 | g g g | g fis2 |% Great is thy faithfulness, O God, my Father;
-      b4 cis b | a4. g8 fis4 | e fis gis | a2. |% There is no shadow of turning with thee.
-      % Thou changest not, thy compassions, they fail not;
-      % As thou hast been, thou forever wilt be.
+      fis4 fis fis | fis4. e8 d4 | g g g | g fis2 | % Great is thy faithfulness, O God, my Father;
+      b4 cis b | a4. g8 fis4 | e fis gis | a2. | % There is no shadow of turning with thee.
+      a4 b cis | d4. cis8 b4 | a g fis | f e2 | % Thou changest not, thy compassions, they fail not;
+      b'4 cis d | d4. a8 a4 | fis fis e | d2. | % As thou hast been, thou forever wilt be.
       % Refrain:
-      % Great is thy faithfulness,
-      % Great is thy faithfulness,
-      % Morning by morning new mercies I see.
-      % All I have needed thy hand hast provided;
-      % Great is thy faithfulness,
-      % Lord unto me.
+      a'4 a e | g8. fis16 f2 | % Great is thy faithfulness,
+      b4 b fis | a8. g16 g2 | % Great is thy faithfulness,
+      a4 b cis | d a b | cis d b | a2. | % Morning by morning new mercies I see.
+      a4 b cis | d4. cis8 b4 | a g fis | fis e2 | % All I have needed thy hand hast provided;
+      b'4 cis d | d4. a8 a4 | % Great is thy faithfulness,
+      fis g cis, | d2. \bar "|."% Lord unto me.
   }
 }
 
