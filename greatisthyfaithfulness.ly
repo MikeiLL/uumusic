@@ -41,16 +41,16 @@ verse = \lyricmode {
 }
 
 harmonies = \chordmode {
-  % Great is thy faithfulness, O God, my Father;
-  % There is no shadow of turning with thee.
-  % Thou changest not, thy compassions, they fail not;
-  % As thou hast been, thou forever wilt be.
+  d2 d4:5+ | g2. | a | g4 d2 | % Great is thy faithfulness, O God, my Father;
+  d2. | d4 a d | a:/e b e:7 | a2. | % There is no shadow of turning with thee.
+  a2. | a | d4 e:m d | e2.:m7/g | % Thou changest not, thy compassions, they fail not;
+  gis2.:dim | d:/a | a:sus | d | % As thou hast been, thou forever wilt be.
   % Refrain:
-  % Great is thy faithfulness,
-  % Great is thy faithfulness,
-  % Morning by morning new mercies I see.
-  % All I have needed thy hand hast provided;
-  % Great is thy faithfulness,
+  a | d2 d4:7 | % Great is thy faithfulness,
+  b2. | e | % Great is thy faithfulness,
+  a | d2 d4:m | a2 e4 | a2. | % Morning by morning new mercies I see.
+  a2. | d | d4 e2:m | g2. | % All I have needed thy hand hast provided;
+  gis2.:dim | d:/a | d2:/a a4 | d2. |% Great is thy faithfulness,
   % Lord unto me.
 }
 
