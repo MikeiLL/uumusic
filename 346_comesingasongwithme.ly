@@ -18,7 +18,7 @@ melody = \relative c' {
     b4( cis) d | cis2 b4 | a2.~ | a2 e'4 | % I might know your mind. And
     e2.~ | e4 b'4 gis | a2.~ | a2 e4 | % I'll bring you hope when
     e2 b4 | e2 d4 | cis2.~ | cis2 e4 |% hope is hard to find, and
-    e2.~ | e4 b' e, | cis'2 b4 | a4 a, a | % I'll bring a song of love and a 
+    e2.~ | e4 b' e, | cis'2 b4 | a4^\markup {"(f#m)"} a, a | % I'll bring a song of love and a 
     b cis d | cis2 b4 | a2.~ | a2. \bar "|."% rose in the wintertime.
   }
 }
@@ -35,8 +35,11 @@ verse = \lyricmode {
 }
 
 harmonies = \chordmode {
-  % Intro
-  c1
+  a2. | a | a | a | e:m/g | e:m/g | e:m/g | e:m/g |
+  a | a | a | a | e:m/g | e:m/g | a | a |
+  e:7 | e:7 | a | a | e:7 | e:7 | a | a | 
+  e:7 | e:7 | a | a | 
+  e:m/g | e:m/g | a | a |
 }
 
 
