@@ -14,11 +14,11 @@ melody = \relative c' {
 
   \partial 4 ees8 f | g4 g8 f( f4.) bes,8 | c4 ees8 ees( ees4) bes8 bes | c8 ees ees c ees ees4. | ees2. % INTRO
   \new Voice = "verse" {
-    ees8 f | % When our
+    ees8^\markup{"Refrain"} f | % When our
     \repeat volta 2 {
       g4 g8 f( f4.) bes,8 | c4 ees8 ees( ees4) bes8 bes | c8 ees ees c ees ees4. | f2 r4 ees8 f |% heart is in a holy place... a holy place, we are
       g4 g8 f4. g8 f | ees4 ees8 ees( ees4) bes8 bes | c8 ees ees c ees ees4. | ees2 r4 g8 bes | % bless’d with love and amazing grace,
-      c4 c8 bes( bes) bes bes4 | g8 f4 ees4. g8 bes | c8 c c c bes4. bes8 | bes2 r4 g8 bes | % trust the wisdom in each of us,
+      c4^\markup{"Verse"} c8 bes( bes) bes bes4 | g8 f4 ees4. g8 bes | c8 c c c bes4. bes8 | bes2 r4 g8 bes | % trust the wisdom in each of us,
       c4 c8 bes( bes) bes c bes | aes8 g4 ees8( ees2) | \time 2/4 r4 bes8 bes | % see our faces in each other’s eyes, Then our
       \time 4/4 c8 ees ees c ees ees4. | ees2 r4 ees8 f | % heart is in a holy place.
     }
@@ -53,7 +53,12 @@ harmonies = \chordmode {
   c c:m7+ | c:m c:m7+ | c c:m7+ | c:m c:m7+ |
   c c:m7+ | c:m c:m7+ | c:m7+ | f:m/c des | ees1:/bes |
 }
-
+bassline = \relative c, {
+	\clef bass
+  	\key f \minor
+  	\time 4/4
+  	f8 r4 f8 des'8 r4 des8 | c8 r4 c8 aes8 r4 aes8 |
+}
 
 \score {
   <<
@@ -70,8 +75,26 @@ harmonies = \chordmode {
   \midi { }
 }
 
-\markup \fill-line {
-  \column {
-  ""
+
+clarinet_verse = \transpose ees des {\relative c'' {
+  \clef treble
+  \key ees \major
+  \time 4/4
+  \new Voice = "clarinet_verse" {
+    \repeat volta 2 {bes2^ \markup{"Refrain"} a | aes a }
   }
+  \new Voice = "clarinet_verse" {
+    \repeat volta 2 {c2^ \markup{"Verse"} b | bes b |}
+    \time 2/4 r4 r8^ \markup{"Then our heart is in a holy place"} r | \time 4/4 aes1 | g |
+  }
+}}
+
+% Additional Notes
+\markup \fill-line {
+"Clarinet lines:"
+" "
+" "
+" "
 }
+
+\new Voice = "clarinet_verse" { \clarinet_verse }
