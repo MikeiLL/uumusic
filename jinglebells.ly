@@ -7,13 +7,13 @@
 	tagline = ##f
 }
 % source https://github.com/flying-czx/LilyPond-Tutorial
-melody = \relative c'{
+melody = \transpose e c {\relative c' {
   \clef treble
   \numericTimeSignature
   \time 4/4
   \key g \major
-  \repeat volta 3{
-    d4 b' a g | d2. 4 | 4 b'4 a g | e2. r4 |
+  \repeat volta 2 {
+    d4 b' a g | d2. d8 d | 4 b'4 a g | e2. r4 |
     e c' b a | fs2. r4 | d' d c a | b1 | d,4 b' a g | d2. r4 |
     d b' a g | e2. 4 | e4 c' b a | d d d d | e d c a | g2 d'4 r |
     b4 4 2 | 4 4 2 | 4 d4 g,4. a8 | b2. r4 |
@@ -26,14 +26,14 @@ melody = \relative c'{
     \relative b'{ d2 d | e fs | g1~ | g~ | g~ | g4 r2. \bar "|." }
   }
   \bar "|."
-}
+}}
 
 lyric = \lyricmode {
   <<
     {
       \set associatedVoice = "melody"
-      Dash -- ing through the snow, in_a one -- horse o -- pen sleigh.
-      Over the fields we go, laugh -- ing all the way.
+      Dash -- ing through the snow, in a one -- horse o -- pen sleigh.
+      O'er the fields we go, laugh -- ing all the way.
       Bells on bob -- tail ring, mak -- ing spi -- rits bright.
       What fun it is to ride and sing a sleigh -- ing song to -- night!
       Oh!
@@ -45,7 +45,7 @@ lyric = \lyricmode {
   Oh, what fun it is to ride in a one -- horse o -- pen sleigh!
   one -- horse o -- pen Sleigh!
 }
-harmonies = \chordmode {
+harmonies = \transpose e c {\chordmode {
   % Intro
   g1 | g | g | c |
   c | c | c | d |
@@ -57,7 +57,7 @@ harmonies = \chordmode {
   g | g | g | g |
   c | g | d | g |
   d | d | g | g |
-}
+}}
 
 \score {
   \layout {
