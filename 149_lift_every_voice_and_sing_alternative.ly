@@ -54,9 +54,9 @@ harmonies = \chordmode {
   <<
     \new ChordNames {
       \set chordChanges = ##t
-      \harmonies
+      \transpose c bes {\harmonies}
     }
-    \new Voice = "one" { \melody }
+    \new Voice = "one" { \transpose c bes, {\melody} }
     \new Lyrics \lyricsto "verse" \verse
   >>
   \layout {
