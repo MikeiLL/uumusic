@@ -1,0 +1,80 @@
+\version "2.18.2"
+
+\header {
+  title = "Danny Boy"
+  composer = "Arranged by Mike iLL Kilmer for UU Pensacola"
+}
+
+\paper{ print-page-number = ##f bottom-margin = 0.5\in }
+melody = \relative c' {
+  \clef treble
+  \key bes \major
+  \time 4/4
+  \set Score.voltaSpannerDuration = #(ly:make-moment 4/4)
+  \new Voice = "verse" {
+    r4 a bes c | d2. c4 | % Oh, Danny boy, the pipes, the pipes are calling
+    % From glen to glen, and down the mountain side.
+    % The summer's gone, and all the roses falling,
+    % It's you, it's you must go and I must bide.
+    % But come ye back when summer's in the meadow,
+    % Or when the valley's hushed and white with snow,
+    % It's I'll be here in sunshine or in shadow,—
+    % Oh, Danny boy, Oh Danny boy, I love you so!
+
+    % But when ye come, and all the flowers are dying,
+    % If I am dead, as dead I well may be,
+    % Ye'll come and find the place where I am lying,
+    % And kneel and say an Avé there for me.
+    % And I shall hear, though soft you tread above me,
+    % And all my grave will warmer, sweeter be,
+    % For you will bend and tell me that you love me,
+    % And I shall sleep in peace until you come to me!
+  }
+}
+
+verse = \lyricmode {
+  Oh, Danny boy, the pipes, the pipes are calling
+  From glen to glen, and down the mountain side.
+  The summer's gone, and all the roses falling,
+  It's you, it's you must go and I must bide.
+  But come ye back when summer's in the meadow,
+  Or when the valley's hushed and white with snow,
+  It's I'll be here in sunshine or in shadow,—
+  Oh, Danny boy, Oh Danny boy, I love you so!
+
+  But when ye come, and all the flowers are dying,
+  If I am dead, as dead I well may be,
+  Ye'll come and find the place where I am lying,
+  And kneel and say an Avé there for me.
+  And I shall hear, though soft you tread above me,
+  And all my grave will warmer, sweeter be,
+  For you will bend and tell me that you love me,
+  And I shall sleep in peace until you come to me!
+}
+
+harmonies = \chordmode {
+  % Intro
+  c1
+}
+
+
+\score {
+  <<
+    \new ChordNames {
+      \set chordChanges = ##t
+      \harmonies
+    }
+    \new Voice = "one" { \melody }
+    \new Lyrics \lyricsto "verse" \verse
+  >>
+  \layout {
+        #(layout-set-staff-size 25)
+    }
+  \midi { }
+}
+
+\markup \fill-line {
+  \column {
+  ""
+  }
+}
