@@ -2,7 +2,7 @@
 
 \header {
   title = "Happy First Week of Spring"
-  composer = "By Hollywood Jones and Mike iLL"
+  composer = "By Hollywood Jones (with Mike iLL)"
 }
 
 \paper{ print-page-number = ##f bottom-margin = 0.5\in }
