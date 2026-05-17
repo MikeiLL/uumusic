@@ -6,7 +6,7 @@
 }
 
 \paper{ print-page-number = ##f bottom-margin = 0.5\in }
-melody = \relative c' {
+melody = \relative c'' {
   \clef treble
   \key a \major
   \time 4/4
@@ -35,6 +35,7 @@ harmonies = \chordmode {
 
 
 \score {
+  \transpose a f {
   <<
     \new ChordNames {
       \set chordChanges = ##t
@@ -43,6 +44,7 @@ harmonies = \chordmode {
     \new Voice = "one" { \melody }
     \new Lyrics \lyricsto "verse" \verse
   >>
+  }
   \layout {
         #(layout-set-staff-size 25)
     }
