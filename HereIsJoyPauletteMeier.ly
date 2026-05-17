@@ -29,7 +29,8 @@ verse = \lyricmode {
 }
 
 harmonies = \chordmode {
-  a1
+  d1:dim | cis:dim | b:m | e:/b | b:m | e:/b | b:m | e:/b |
+  d1:dim | cis:dim | b:m | e:/b | b:m | e:/b | g2 b | b1:7 |
 }
 
 
