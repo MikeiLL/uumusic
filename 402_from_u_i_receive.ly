@@ -23,6 +23,26 @@ melody = \relative c' {
   }
 }
 
+clarinet = \relative c' {
+  \clef treble
+  \key f \major
+  \time 7/8
+  \set Score.voltaSpannerDuration = #(ly:make-moment 4/4)
+  \new Voice = "clarinet" {
+    \partial 2 d8^\staccato r d^\staccato r | % from
+    \repeat volta 2 {
+    c4. f8^\staccato r f^\staccato r | a4. f8^\staccato r f^\staccato r | % you I re
+    cis4. f8^\staccato r f^\staccato r | g4. f8^\staccato r f^\staccato r | % ceive to
+    ees4. f8^\staccato r f^\staccato r | g4. f8^\staccato r f^\staccato r |  % you I
+    d4. f8^\staccato r f^\staccato r | g4. f8^\staccato r f^\staccato r | % give to
+    cis4. f8^\staccato r f^\staccato r | a4. f8^\staccato r f^\staccato r | % gether we
+    d4. f8^\staccato r f^\staccato r | g4. f8^\staccato r f^\staccato r | % share and from
+    cis4. e8^\staccato r e^\staccato r | g4. e8^\staccato r e^\staccato r | % this we
+    ees4. f8^\staccato r f^\staccato r | d4. g8^\staccato r g^\staccato r | % live
+    }
+  }
+}
+
 verse = \lyricmode {
   From you I re -- ceive
   to you I give
@@ -53,6 +73,7 @@ harmonies = \chordmode {
     }
     \new Voice = "one" { \melody }
     \new Lyrics \lyricsto "verse" \verse
+    \new Voice = "clarinet" { \clarinet }
   >>
   \layout {
         #(layout-set-staff-size 25)
