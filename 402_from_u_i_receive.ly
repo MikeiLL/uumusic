@@ -12,6 +12,7 @@ melody = \relative c' {
   \time 7/8
   \set Score.voltaSpannerDuration = #(ly:make-moment 4/4)
   \new Voice = "verse" {
+    \tempo "Presto" 4 = 180
     \partial 2 c2 | % from
     \repeat volta 2 {
     a'4.~ a2~ | a4. a4 c | % you I re
