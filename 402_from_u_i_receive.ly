@@ -23,7 +23,7 @@ melody = \relative c' {
   }
 }
 
-clarinet = \relative c' {
+clarinet = \relative c'' \transpose f g  {{
   \clef treble
   \key f \major
   \time 7/8
@@ -40,7 +40,7 @@ clarinet = \relative c' {
     cis4. e8^\staccato r e^\staccato r | g4. e8^\staccato r e^\staccato r | % this we
     ees4. f8^\staccato r f^\staccato r | d4. g8^\staccato r g^\staccato r | % live
     }
-  }
+  }}
 }
 
 verse = \lyricmode {

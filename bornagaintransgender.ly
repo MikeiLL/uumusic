@@ -54,7 +54,8 @@ melody = \relative c'' {
     c4. r \tuplet 4/6 {r8 c c c}% man. To be a
     d4. r \tuplet 4/6 {r8 d d d}% man. To be a
     e4. r \tuplet 4/6 {r8 e e e}% man. To be a
-    f1. % man. To be a man?
+    fis4. r \tuplet 4/6 {r8 fis fis fis}% man. To be a
+    a1.~ | a2. r4. r4. \bar "|." % man. To be a man?
   }
 
 }
@@ -89,7 +90,14 @@ harmonies = \chordmode {
 
 }
 
-
+bass = \relative c {
+  \clef bass
+  \key c \major
+  \time 12/8
+  \new Voice = "bass" {
+    \repeat volta 2 {g4 g8 g'4 g8 g,4 g8 g'4 g8 | g,4 g8 g'4 g8 g,4 g8 g'4 g8 |}
+  }
+}
 
 \score {
   <<
@@ -108,8 +116,9 @@ harmonies = \chordmode {
 
 % Additional Notes
 \markup \fill-line {
-"Clarinet lines:"
+"Bass feel:"
 " "
 " "
 " "
 }
+\new Voice = "bass" { \bass }
