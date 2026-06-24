@@ -87,7 +87,16 @@ verse = \lyricmode {
 
 harmonies = \chordmode {
   % Intro
-
+  g1. | g1. | g1. | g1. |
+  g1. | g1. | g1. | g1. |
+  g1. | g1. | g1. | g1. |
+  g1. | g1. | g1. | g1. |
+  g1. | g1. | g1. | g1. |
+  g1. | g1. | g1. | g1. |
+  g1. | g1. | g1. |
+  a1.:9/cis | g1.:9/b | a1.:m7 | g1.:maj7 |
+  d1. | g1.:/d | d1.:7 | d1. |
+  g1.:/d | c1.:/d | d1. | c1.:/d |
 }
 
 bass = \relative c {
