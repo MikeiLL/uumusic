@@ -6,21 +6,20 @@
 }
 
 \paper{ print-page-number = ##f bottom-margin = 0.5\in }
-melody = \relative c' {
+melody = \relative c'' {
   \clef treble
   \key ees \major
   \time 4/4
   \set Score.voltaSpannerDuration = #(ly:make-moment 4/4)
-
-  \partial 4 ees8 f | g4 g8 f( f4.) bes,8 | c4 ees8 ees( ees4) bes8 bes | c8 ees ees c ees ees4. | ees2. % INTRO
+  b4. a8~ a2 | a4. g8~ g2 | g4. f8~ f4. ees8~ | ees2.
   \new Voice = "verse" {
     ees8^\markup{"Refrain"} f | % When our
     \repeat volta 2 {
       g4 g8 f( f4.) bes,8 | c4 ees8 ees( ees4) bes8 bes | c8 ees ees c ees ees4. | f2 r4 ees8 f |% heart is in a holy place... a holy place, we are
       g4 g8 f4. g8 f | ees4 ees8 ees( ees4) bes8 bes | c8 ees ees c ees ees4. | ees2 r4 g8 bes | % bless’d with love and amazing grace,
       c4^\markup{"Verse"} c8 bes( bes) bes bes4 | g8 f4 ees4. g8 bes | c8 c c c bes4. bes8 | bes2 r4 g8 bes | % trust the wisdom in each of us,
-      c4 c8 bes( bes) bes c bes | aes8 g4 ees8( ees2) | \time 2/4 r4 bes8 bes | % see our faces in each other’s eyes, Then our
-      \time 4/4 c8 ees ees c ees ees4. | ees2 r4 ees8 f | % heart is in a holy place.
+      c4 c8 bes( bes) bes c bes | \time 2/4 g8 f4 ees8~ | \time 4/4 ees2 r4 bes8 bes | % see our faces in each other’s eyes, Then our
+      c8 ees ees c ees ees4. | ees2 r4 ees8 f | % heart is in a holy place.
     }
   }
 }
@@ -46,18 +45,12 @@ verse = \lyricmode {
 
 harmonies = \chordmode {
   % Intro
-  r4
-  f2:sus f | f:m f | f:sus f | f:m f |
-  f:sus f | f:m f | f:sus f | f:m f |
-  f:sus f | f:m f | f:sus f | f:m f |
-  c c:m7+ | c:m c:m7+ | c c:m7+ | c:m c:m7+ |
-  c c:m7+ | c:m c:m7+ | c:m7+ | f:m/c des | ees1:/bes |
-}
-bassline = \relative c, {
-	\clef bass
-  	\key f \minor
-  	\time 4/4
-  	f8 r4 f8 des'8 r4 des8 | c8 r4 c8 aes8 r4 aes8 |
+  f2:7.11+ f:7 | ees2:7.11+ ees:7 |
+  des2:7.11+ des:7 | b1:9 |
+  des1:7.11+ | c:m7 | f:9/a | des/aes |
+  des1:7.11+ | c:m7 | f:9/a | b2:9 bes:9 |
+  c2:m c:m7+ | c:m7 c:m7+ | c:m c:m7+ | c:m7 c:m7+ |
+  c:m c:m7+ | c:m7 | c:m7+ c:m7+ | f2:m/c des | b1:9 |
 }
 
 \score {
@@ -76,7 +69,7 @@ bassline = \relative c, {
 }
 
 
-clarinet_verse = \transpose ees des {\relative c'' {
+clarinet_verse = \transpose ees f {\relative c'' {
   \clef treble
   \key ees \major
   \time 4/4
