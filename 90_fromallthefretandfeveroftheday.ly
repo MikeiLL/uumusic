@@ -44,7 +44,7 @@ harmonies = \chordmode {
   c1.:sus7
   g2:m7/d g:m6/d g:m7/d
   a:m7.5-/ees d:7 g:7/d
-  c2.:sus7
+  c2:sus7 f4:/c
 }
 
 
