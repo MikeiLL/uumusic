@@ -29,7 +29,7 @@ verse = \lyricmode {
 
 harmonies = \chordmode {
   % Intro
-  f2:sus/des f8:sus/des f4.:7/ees
+  f2:sus/des f8:sus/des f2:7/ees
   d2.:m d8:m f2:7/ees
   f2:/c f8:/c g2.:7/b
   bes2.:m g2:m/bes
