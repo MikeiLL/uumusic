@@ -12,7 +12,7 @@ melody = \relative c' {
   \set Score.voltaSpannerDuration = #(ly:make-moment 4/4)
   \cadenzaOn
   \new Voice = "verse" {
-    f8 g a bes a g a4. \bar "|" % Be ye lamps un -- to your -- selves;
+    f8 g a( bes) a g a a4. \bar "|" % Be ye lamps un -- to your -- selves;
     g8 c c( g) a( bes a) g a4. \bar "|" % be your own con -- fi -- dence;
     a8 a g a g f( e) f g4. \bar "|" % hold to the truth with -- in your -- selves
     a8( g) f e f( g) e d4. \bar "|."% as to the on -- ly lamp.
@@ -29,7 +29,7 @@ verse = \lyricmode {
 
 harmonies = \chordmode {
   % Intro
-  f2:sus/des f8:sus/des f2:7/ees
+  f2:sus/des f4:sus/des f2:7/ees
   d2.:m d8:m f2:7/ees
   f2:/c f8:/c g2.:7/b
   bes2.:m g2:m/bes
