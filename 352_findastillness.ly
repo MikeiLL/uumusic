@@ -42,8 +42,8 @@ harmonies = \chordmode {
   % Intro
   f1:m | f:m | f:m | f2:m c:7 |
   f1:m | f:m | f:m | f2:m c:7 |
-  c1:7 | c:7 | c:7 | bes:m7 |
-  bes:m7 | c:7 | f:m |
+  c1:7 | c:7 | f:m | bes:m7 |
+  f:m | c:7 | f:m |
 }
 
 
@@ -64,6 +64,12 @@ harmonies = \chordmode {
 
 \markup \fill-line {
   \column {
-  ""
+  "See the essence"
+  "Hold the essence"
+  "Let the essence"
+  " "
+  "Let me flower"
+  "Help me flower"
+  "Watch me flower"
   }
 }
