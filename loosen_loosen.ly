@@ -12,10 +12,12 @@ melody = \relative c' {
   \time 6/8
   \set Score.voltaSpannerDuration = #(ly:make-moment 4/4)
   \new Voice = "verse" {
-    c8 r a c r a | c4( d8) c4 r8 | % Loosen, loosen, baby,
-    e4 c8 e4 c8 | e4( f8) e r e | % You don’t have to carry, The
-    e a g e c d | e d c a r a | % weight of the world in your muscles and bones, Let
-    c4 d8 b4 c8 | a4 r2 | % go, let go, let go.
+    \repeat volta 2 {
+      c8 r a c r a | c4( d8) c4 r8 | % Loosen, loosen, baby,
+      e4 c8 e4 c8 | e4( f8) e r e | % You don’t have to carry, The
+      e a g e c d | e d c a r a | % weight of the world in your muscles and bones, Let
+      c4 d8 b4 c8 | a4 r2 | % go, let go, let go.
+    }
   }
 }
 
@@ -28,7 +30,10 @@ verse = \lyricmode {
 
 harmonies = \chordmode {
   % Intro
-  c1
+  a2.:m | g |
+  c | d:m |
+  a4.:m g | c2. |
+  d2.:m | d:m |
 }
 
 
