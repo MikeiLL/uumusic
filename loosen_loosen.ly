@@ -18,6 +18,10 @@ melody = \relative c' {
       e a g e c d | e d c a r a | % weight of the world in your muscles and bones, Let
       c4 d8 b4 c8 | a4 r2 | % go, let go, let go.
     }
+    \repeat volta 2 {
+      a2~ a8 g | g r4 r c8 | e2~ e8 d | a4. r |% Holy breath and holy name,
+      a4. g | g g4 c8 | e4. d | a r |% Will you ease, will you ease this pain.
+    }
   }
 }
 
@@ -26,12 +30,20 @@ verse = \lyricmode {
   You don't have to car -- ry, The
   weight of the world in your mus -- cles and bones, Let
   go, let go, let go.
+
+  Ho -- ly breath and ho -- ly name, Will you
+  ease, will you ease this pain.
 }
 
 harmonies = \chordmode {
   % Intro
   a2.:m | g |
   c | d:m |
+  a4.:m g | c2. |
+  d2.:m | d:m |
+
+  a2.:m | g |
+  d:m | d:m |
   a4.:m g | c2. |
   d2.:m | d:m |
 }

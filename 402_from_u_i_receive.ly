@@ -53,7 +53,7 @@ verse = \lyricmode {
 
 harmonies = \chordmode {
   % Intro
-  ees2:maj9/d |
+  ees2:maj9/des |
   f4./c f2/c | f4./c f2/c |
   bes4.:m/des bes2:m/des | bes4.:m/des bes2:m/des |
   f4.:sus7/ees f2:sus7/ees | f4.:sus7/ees f2:sus7/ees |
@@ -61,7 +61,7 @@ harmonies = \chordmode {
   cis4.:5+ cis2:5+ | cis4.:5+ cis2:5+ |
   g4.:7/b g2:7/b | g4.:7/b g2:7/b |
   cis4.:m7.5- cis2:m7.5- | cis4.:m7.5- cis2:m7.5- |
-  ees4.:maj9/d ees2:maj9/d | ees4.:maj9/d ees2:maj9/d |
+  ees4.:maj9/d ees2:maj9/d | ees4.:maj9/des ees2:maj9/des |
 }
 
 
