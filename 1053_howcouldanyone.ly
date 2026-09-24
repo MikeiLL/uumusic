@@ -43,6 +43,9 @@ harmonies = \chordmode {
   % Intro
   cis2:m11 cis:m | e1:sus7/b | e:sus7/b |
   a:maj7 | a:maj7 | d:maj7 | gis:5+ |
+  cis:m | fis:/cis | b:sus7/fis | b:sus7/fis |
+  e2:/b e:5+/c | cis1:m | a | b:7.9 |
+  a | cis2:m11 cis:m |
 }
 
 
