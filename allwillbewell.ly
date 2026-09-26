@@ -63,22 +63,18 @@ verse = \lyricmode {
   Ju -- li -- an, do you not know, do you not know a -- bout hun -- ger and
   Ju -- li -- an, do you not know, do you not know 'bout shame she said
 
-%
-% She said All will be well, and all will be well
-% All manner of things will be well
-%
-% I said Ju -- li -- an, do you not know, do you not know about loneliness? (3x)
+  I said Ju -- li -- an, do you not know, do you not know about loneliness? (3x)
 % (disease, cruelty)
-% I said Julian, it's too much: It brought me to my knees
-% She said All will be well...
+  I said Julian, it's too much: It brought me to my knees
+  She said All will be well...
 %
-% She said, No one does not know, does not know about sorrow (4x)
+  She said, No one does not know, does not know about sorrow (4x)
 % (pain, hunger, shame)
-% She said All will be well...
+  She said All will be well...
 %
-% She said, No one does not know, does not know about loneliness (3x)
+  She said, No one does not know, does not know about loneliness (3x)
 % (substitute: disease, cruelty)
-% She said “I know, it's too much.  It brought me to my knees, where I heard:
+  She said “I know, it's too much.  It brought me to my knees, where I heard:
 % All will be well...
 %
 % I said Julian, you are holy, you are holding my hand (2x)
