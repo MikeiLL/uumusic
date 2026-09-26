@@ -52,11 +52,11 @@ melody = \relative c'' {
           cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
           a4 fis r8 fis8 fis4 | a4 a8 b4. a4 | % not know about loneliness, and
           cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
-          a4 a8 a b4 r8 fis~ | fis4 r8 fis a8 b4 r8 | % not know bout pain 'n i said
+          a4 a8 a b4 fis8 fis~ | fis4 r8 fis a8 b4 r8 | % not know about disease 'n i said
           cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
-          a4 fis r8 fis8 fis4 | a4 b2 a4 | % not know, do you not know a -- bout hun -- ger and
-          cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
-          a4 fis a fis~ | fis4 r a8 b4. | % not know, do you not know bout shame she said
+          a4 fis r8 fis8 fis4 | a4 b2 a8 a | % not know a -- bout cruelty I said
+          cis8 cis b4 r r8 fis | a fis4 r8 r4. fis8 | % Julian, it's too much: it
+          a4 a b fis | fis4. r8 a8 b4. | % brought me to my knees she said
         }
     }
   }
@@ -74,9 +74,9 @@ verse = \lyricmode {
   Ju -- li -- an, do you not know, do you not know a -- bout hun -- ger and
   Ju -- li -- an, do you not know, do you not know 'bout shame she said
 
-  I said Ju -- li -- an, do you not know, do you not know about lone -- li -- ness and
-  Ju -- li -- an, do you not know, do you not know about dis -- ease and I said
-  Ju -- li -- an, do you not know, do you not know about cruel -- ty I said
+  Ju -- li -- an, do you not know, do you not know a -- bout lone -- li -- ness and
+  Ju -- li -- an, do you not know, do you not know a -- bout dis -- ease and I said
+  Ju -- li -- an, do you not know, do you not know a -- bout cruel -- ty I said
 % (disease, cruelty)
   Ju -- li -- an, it's too much: It brought me to my knees
   She said
