@@ -20,16 +20,26 @@ melody = \relative c'' {
     cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, you are holy, you are
     a4 fis a fis~ | fis4. r8 a b4. |% holding my hand she said
     \repeat volta 2 {
-      cis2 b8 a4. | b2. r4 | a2 a4 a8 a~ | a4 r a8( b4.) | % All will be well. All
-      cis4 b r r8 a | b2. r4 | r2 a4 fis8 fis~ | fis2 r | % man -- ner of things will be well
-      r1 | r |
+      <<
+     \context Voice = verse {
+        \voiceTwo
+        cis2 b8 a4. | b2. r4 | a2 a4 a8 a~ | a4 r a8( b4.) | % All will be well. All
+        cis4 b r r8 a | b2. r4 | r2 a4 fis8 fis~ | fis2 r | % man -- ner of things will be well
+        r1 | r |
 
-      r2 a8 b4. |
+        r2 a8 b4. |
+      }
+      \context Voice = harmony {
+        \voiceOne
+        e2 e8 e4. | e1 | d2 d4 cis8 cis~ | cis4 r cis8( d4.) |
+        e4 e2 e4 | e2. r4 | r2 d4 cis8 cis~ | cis2 r |
+      }
+      >>
     }
     \alternative {
         {
           cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
-          a4 fis r8 fis8 fis4 | a4 b2 a4 |  % not know, do you not know about sor -- row, and
+          a4 fis r8 fis8 fis4 | a4 b2 a4 | % not know, do you not know about sor -- row, and
           cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
           a4 fis a fis~ | fis4 r8 fis a8 b4. | % not know bout pain 'n i said
           cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
