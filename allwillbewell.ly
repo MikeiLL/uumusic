@@ -39,9 +39,20 @@ melody = \relative c'' {
     \alternative {
         {
           cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
-          a4 fis r8 fis8 fis4 | a4 b2 a4 | % not know, do you not know about sor -- row, and
+          a4 fis r8 fis8 fis4 | a4 b2 a4 | % not know about sor -- row, and
           cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
           a4 fis a fis~ | fis4 r8 fis a8 b4. | % not know bout pain 'n i said
+          cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
+          a4 fis r8 fis8 fis4 | a4 b2 a4 | % not know a -- bout hun -- ger and
+          cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
+          a4 fis a fis~ | fis4 r a8 b4. | % not know bout shame she said
+        }
+
+        {
+          cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
+          a4 fis r8 fis8 fis4 | a4 a8 b4. a4 | % not know about loneliness, and
+          cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
+          a4 a8 a b4 r8 fis~ | fis4 r8 fis a8 b4 r8 | % not know bout pain 'n i said
           cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
           a4 fis r8 fis8 fis4 | a4 b2 a4 | % not know, do you not know a -- bout hun -- ger and
           cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
@@ -63,16 +74,18 @@ verse = \lyricmode {
   Ju -- li -- an, do you not know, do you not know a -- bout hun -- ger and
   Ju -- li -- an, do you not know, do you not know 'bout shame she said
 
-  I said Ju -- li -- an, do you not know, do you not know about loneliness? (3x)
+  I said Ju -- li -- an, do you not know, do you not know about lone -- li -- ness and
+  Ju -- li -- an, do you not know, do you not know about dis -- ease and I said
+  Ju -- li -- an, do you not know, do you not know about cruel -- ty I said
 % (disease, cruelty)
-  I said Julian, it's too much: It brought me to my knees
-  She said All will be well...
+  Ju -- li -- an, it's too much: It brought me to my knees
+  She said
 %
-  She said, No one does not know, does not know about sorrow (4x)
+  She said, No one does not know, does not know about sorrow
 % (pain, hunger, shame)
   She said All will be well...
 %
-  She said, No one does not know, does not know about loneliness (3x)
+  She said, No one does not know, does not know about loneliness
 % (substitute: disease, cruelty)
   She said “I know, it's too much.  It brought me to my knees, where I heard:
 % All will be well...
@@ -126,6 +139,6 @@ harmonies = \chordmode {
 
 \markup \fill-line {
   \column {
-
+   "Referencing the medieval English mystic Julian of Norwich and her famous book Revelations of Divine Love."
   }
 }
