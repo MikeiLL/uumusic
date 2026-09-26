@@ -19,19 +19,25 @@ melody = \relative c'' {
     a4 fis r fis8 fis | a4 fis r fis | a2 b | % holy, you are holding my hand and
     cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, you are holy, you are
     a4 fis a fis~ | fis4. r8 a b4. |% holding my hand she said
-    cis2 b8 a4. | b2. r4 | a2 a4 a8 a~ | a4 r a8( b4.) | % All will be well. All
-    cis4 b r r8 a | b2. r4 | r2 a4 fis8 fis~ | fis2 r | % man -- ner of things will be well
-    r1 | r |
+    \repeat volta 2 {
+      cis2 b8 a4. | b2. r4 | a2 a4 a8 a~ | a4 r a8( b4.) | % All will be well. All
+      cis4 b r r8 a | b2. r4 | r2 a4 fis8 fis~ | fis2 r | % man -- ner of things will be well
+      r1 | r |
 
-    r2 a8 b4. |
-    cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
-    a4 fis r8 fis8 fis4 | a4 b2 a4 |  % not know, do you not know about sor -- row, and
-    cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
-    a4 fis a fis~ | fis4 r8 fis a8 b4. | % not know bout pain 'n i said
-    cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
-    a4 fis r8 fis8 fis4 | a4 b2 a4 | % not know, do you not know a -- bout hun -- ger and
-    cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
-    a4 fis a fis~ | fis4 r a8 b4. | % not know, do you not know bout shame she said
+      r2 a8 b4. |
+    }
+    \alternative {
+        {
+          cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
+          a4 fis r8 fis8 fis4 | a4 b2 a4 |  % not know, do you not know about sor -- row, and
+          cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
+          a4 fis a fis~ | fis4 r8 fis a8 b4. | % not know bout pain 'n i said
+          cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
+          a4 fis r8 fis8 fis4 | a4 b2 a4 | % not know, do you not know a -- bout hun -- ger and
+          cis8 cis b4 r fis8 fis | a4 fis r fis8 fis | % Julian, do you not know, do you
+          a4 fis a fis~ | fis4 r a8 b4. | % not know, do you not know bout shame she said
+        }
+    }
   }
 }
 
@@ -84,6 +90,12 @@ harmonies = \chordmode {
   a | e | d | a |
   a | e | d |
   fis:m | fis:m | fis:m | fis:m |
+
+
+  fis:m | b:m | b:m | f:m | % verse 2
+  fis:m | b:m | b:m | f:m |
+  fis:m | b:m | b:m | f:m |
+  fis:m | b:m | b:m | f:m |
 
 }
 %  Em Am -  CD / Em Am - Em ://
