@@ -69,7 +69,7 @@ melody = \relative c'' {
           cis4 b r fis | a4 fis r fis | % no one does not know, does
           a4 fis a fis~ | fis2 r8 a b4 | % not know 'bout pain she said
           cis4 b r fis | a4 fis r fis | % no one does not know, does
-          a4 fis r8 fis fis4 | a4 b2 4 | % not know a -- bout hunger
+          a4 fis r8 fis fis4 | a4 b2 r4 | % not know a -- bout hunger
           cis4 b r fis | a4 fis r fis | % no one does not know, does
           a4 fis a fis~ | fis4. r8 a8 b4. | % not know 'bout shame she said
         }
